@@ -21,9 +21,21 @@ export default function Header({ mode = 'dark' }: {
 
             {/* Desktop menu links */}
             <ul className="flex grow justify-start flex-wrap items-center">
-              <li>
-                <Link href="/pricing" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">我们的产品</Link>
-              </li>
+              
+                <Dropdown title="我们的产品">
+                  {/* <Link href="/pricing" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 
+                  dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">我们的产品</Link> */}
+                  <li>
+                    <Link href="/products/skyload_iq" className="font-bold text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Skyload iQ</Link>
+                  </li>
+                  <li>
+                    <Link href="/products/skycube_iq" className="font-bold text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">SkyQube iQ</Link>
+                  </li>
+                  <li>
+                    <Link href="/products/skyoptimizer" className="font-bold text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">SkyOptimizer</Link>
+                  </li>
+                </Dropdown>
+              
               <li>
                 <Link href="/about" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">我们的公司</Link>
               </li>
@@ -38,10 +50,10 @@ export default function Header({ mode = 'dark' }: {
               <Dropdown title="CN">
                 {/* 2nd level: hover */}
                 <li>
-                  <Link href="/404" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">EN</Link>
+                  <Link href="/404" className="font-bold text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">EN</Link>
                 </li>
                 <li>
-                  <Link href="/support" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">JP</Link>
+                  <Link href="/support" className="font-bold text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">JP</Link>
                 </li>
               </Dropdown>
               <li>

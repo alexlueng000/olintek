@@ -17,8 +17,8 @@ export default function HeroAbout() {
         <div className="pt-32 md:pt-40">
 
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-16">
-            <h1 className="h1 font-playfair-display text-slate-100">We're designing a new way to do business</h1>
+          <div className="max-w-4xl mx-auto text-center pb-16">
+            <h2 className="h2 font-playfair-display text-slate-100">OLINTEK - 创造一个超越经验的世界</h2>
           </div>
 
           {/* Hero image */}
