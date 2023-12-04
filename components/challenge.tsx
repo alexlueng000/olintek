@@ -1,11 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import CustomerAvatar01 from '@/public/images/customer-avatar-01.jpg'
-import CustomerAvatar02 from '@/public/images/customer-avatar-02.jpg'
-import CustomerAvatar03 from '@/public/images/customer-avatar-03.jpg'
 import Customers01 from '@/public/images/customers-01.jpg'
 import Customers02 from '@/public/images/customers-02.jpg'
-import Customers03 from '@/public/images/customers-03.jpg'
 
 export default function Challenge() {  
   return (

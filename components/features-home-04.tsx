@@ -1,13 +1,11 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { Transition } from '@headlessui/react'
 import Image from 'next/image'
 import FeaturesImage from '@/public/images/features-home-02.png';
 
 export default function FeaturesHome04() {
 
-  const [tab, setTab] = useState<number>(1)
 
   const tabs = useRef<HTMLDivElement>(null)
 

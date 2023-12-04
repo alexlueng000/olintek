@@ -2,7 +2,7 @@ import Link from 'next/link'
 import VideoThumb from '@/public/images/hero-image-01.jpg'
 import ModalVideo01 from '@/components/modal-video-01'
 
-export default function ΩHeroHome() {
+export default function HeroHome() {
   return (
     <section className="relative">
 
