@@ -21,14 +21,14 @@ export default function HeroHome() {
         <div className="mt-8 flex flex-wrap gap-4 text-center justify-center">
           <a
             href="#"
-            className="block w-full rounded bg-lime-500 px-12 py-3 text-base font-medium text-white shadow hover:bg-green-500 focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
+            className="block w-full rounded bg-lime-500 px-12 py-3 text-base font-medium text-white shadow focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
           >
             联系我们
           </a>
 
           <a
             href="#"
-            className="block w-full rounded bg-white px-12 py-3 text-base font-medium text-lime-500 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+            className="block w-full rounded bg-white px-12 py-3 text-base font-medium text-lime-500 shadow hover:text-white hover:bg-lime-500 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
           >
             在线申请
           </a>

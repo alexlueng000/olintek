@@ -15,12 +15,12 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Features04 />
-      <Challenge />
+      {/* <Features04 /> */}
+      {/* <Challenge /> */}
       <Features03 />
       
-      <Target1 />
-      <Target />
+      <Target1 /> {/* 是什么让我们与众不同 */}
+      <Target /> {/* 智力超群的运算力 */}
       <Clients1 />
     </>
   )

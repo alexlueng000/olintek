@@ -1,3 +1,4 @@
+
 'use client'
 
 
@@ -10,14 +11,12 @@ import Image from 'next/image'
 import HeroImage from '@/public/images/about-hero.jpg'
 import IntroImage from '@/public/images/about-intro.jpg'
 
-
 import FeatImage01 from '@/public/images/features-03-image-01.png'
 import FeatImage02 from '@/public/images/features-03-image-02.png'
 import FeatImage03 from '@/public/images/features-03-image-03.png'
 
 export default function SkyOptimizer() {
 
-  // const [tab, setTab] = useState<number>(1)
 
   const tabs = useRef<HTMLDivElement>(null)
 
