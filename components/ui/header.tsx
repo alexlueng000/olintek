@@ -20,8 +20,7 @@ export default function Header({ mode = 'dark' }: {
           <nav className="hidden md:flex md:grow ">
 
             {/* Desktop menu links */}
-
-            <ul className="flex grow justify-end flex-wrap items-center">
+            <ul className="flex grow justify-start flex-wrap items-center">
               
                 <Dropdown title="我们的产品">
                   {/* <Link href="/pricing" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 
