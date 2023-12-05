@@ -1,50 +1,41 @@
-import Link from 'next/link'
-import VideoThumb from '@/public/images/hero-image-01.jpg'
-import ModalVideo01 from '@/components/modal-video-01'
-
 export default function HeroHome() {
   return (
-    <section className="relative">
+    <section className="relative bg-[url(/images/working.jpg)] bg-cover bg-center bg-no-repeat mt-5 h-[500px] md:h-[600px]">
 
-      {/* Dark background */}
-      <div className="absolute inset-0 bg-slate-900 pointer-events-none -z-10 [clip-path:polygon(0_0,_5760px_0,_5760px_calc(100%_-_352px),_0_100%)]" aria-hidden="true"></div>
+    <div
+      className="absolute inset-0 bg-gradient-to-r from-white to-transparent ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
+    ></div>
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-32 pb-20 md:pt-40 md:pb-44">
+    <div
+      className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:items-center lg:justify-start lg:px-8 h-full"
+    >
+      <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+        <h1 className="text-5xl font-extrabold sm:text-6xl lg:text-7xl">
+          超越经验的世界
+        </h1>
 
-          {/* Hero content */}
-          <div className="max-w-xl mx-auto md:max-w-none md:flex md:items-center md:space-x-8 lg:space-x-16 xl:space-x-20 space-y-16 md:space-y-0">
+        <p className="mt-4 max-w-xl sm:text-lg/relaxed">
+        这是一款基于飞机货舱配载、货物打板的智慧决策软件，可适应您不同的作业方式，优化您的装载效率，帮助您获得更高水平的营收
+        </p>
 
-            {/* Content */}
-            <div className="text-center md:text-left md:min-w-[30rem]" data-aos="fade-right">
-              <h2 className="h2 font-playfair-display text-slate-100 mb-4">我们赋予智能的飞机配载、货物打板</h2>
-              <p className="text-xl text-slate-400 mb-8">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
-              <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-                <div>
-                  <Link className="btn text-white bg-blue-600 hover:bg-blue-700 w-full group" href="/request-demo">
-                    试用申请 <span className="tracking-normal text-blue-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
-                  </Link>
-                </div>
-                <div>
-                  <Link className="btn text-white bg-slate-700 hover:bg-slate-800 w-full" href="#0">了解详情</Link>
-                </div>
-              </div>
-            </div>
+        <div className="mt-8 flex flex-wrap gap-4 text-center justify-center">
+          <a
+            href="#"
+            className="block w-full rounded bg-lime-500 px-12 py-3 text-base font-medium text-white shadow hover:bg-green-500 focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
+          >
+            联系我们
+          </a>
 
-            {/* Hero image */}
-            <ModalVideo01
-              thumb={VideoThumb}
-              thumbWidth={540}
-              thumbHeight={405}
-              thumbAlt="Modal video thumbnail"
-              video="/videos/video.mp4"
-              videoWidth={1920}
-              videoHeight={1080} />            
-
-          </div>
-
+          <a
+            href="#"
+            className="block w-full rounded bg-white px-12 py-3 text-base font-medium text-lime-500 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+          >
+            在线申请
+          </a>
         </div>
       </div>
+    </div>
+
     </section>
   )
 }

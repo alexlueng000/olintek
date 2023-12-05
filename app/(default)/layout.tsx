@@ -24,8 +24,8 @@ export default function DefaultLayout({
   })
 
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
-      <Header />
+    <div className="flex flex-col min-h-screen">
+      <Header mode='light' />
       
       <main className="grow">
 
