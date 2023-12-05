@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-=======
-import Link from 'next/link'
-import VideoThumb from '@/public/images/hero-image-01.jpg'
-import ModalVideo01 from '@/components/modal-video-01'
 
->>>>>>> 3ed7f95ce389a36ba85b2c37354a47d0cc72aed1
 export default function HeroHome() {
   return (
     <section className="relative bg-[url(/images/working.jpg)] bg-cover bg-center bg-no-repeat mt-5 h-[500px] md:h-[600px]">
