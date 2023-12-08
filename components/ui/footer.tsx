@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Logo from './logo'
 
 export default function Footer() {
   return (
@@ -11,7 +12,7 @@ export default function Footer() {
           {/* 1st block */}
           <div className="lg:max-w-xs text-center md:text-left mb-6 md:mb-0">
             <div className="mb-2">
-              <img src="/images/OLINTEK-LOGO-PNG.png" alt="logo" className="w-20 h-10 fill-current" />
+              <Logo />
             </div>
             <div className="text-md text-slate-800">自2016年以来，我们公司一直在开发高质量、可靠的软件，以满足航空货运企业的需求。我们是专业的算法与优化的软件开发专业公司。</div>
           </div>
@@ -22,9 +23,6 @@ export default function Footer() {
             <ul className="text-sm font-medium space-y-2">
               <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">104  台北市南京西路1-1号6楼 </a>
-              </li>
-              <li>
-                <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">电话：+886-2-29297690</a>
               </li>
               <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">E-mail：service@olintek.com</a>
