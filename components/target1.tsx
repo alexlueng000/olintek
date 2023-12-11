@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import TargetImage from '@/public/images/features-02-image.png'
+import Filght from '@/public/images/picture_flight.png'
+import Pat from '@/public/images/pat.jpg'
 
 export default function Target1() {
   return (
@@ -22,7 +24,7 @@ export default function Target1() {
 
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-right" data-aos-delay="200" data-aos-anchor="[data-aos-id-target]">
-                <Image className="mx-auto md:max-w-none" src={TargetImage} width={540} height={520} alt="Features 02" />
+                <Image className="mx-auto md:max-w-none h-full" src={Pat} width={540} height={600} alt="Features 02" />
               </div>
 
               {/* Content */}

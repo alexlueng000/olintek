@@ -44,6 +44,15 @@ export default function Clients1() {
 
   
             </div>
+
+            <div className="flex justify-center mt-12">
+              <a
+                href="/companies"
+                className="block w-full rounded bg-lime-500 px-12 py-3 text-base font-medium text-white shadow focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
+              >
+                合作伙伴
+              </a>
+            </div>
           </div>
         </div>
       </section>

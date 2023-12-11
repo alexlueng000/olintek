@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import HeroImage from '@/public/images/about-hero.jpg'
-import IntroImage from '@/public/images/about-intro.jpg'
 import TurnOn from '@/public/images/turn_on.jpg'
 
-export default function HeroAbout() {  
+export default function Companies() {  
   return (
+    <>
     <section className="relative">
 
       {/* Dark background */}
@@ -19,7 +19,7 @@ export default function HeroAbout() {
 
           {/* Section header */}
           <div className="max-w-4xl mx-auto text-center pb-16">
-            <h1 className="h1 font-playfair-display text-slate-100">创造一个超越经验的世界</h1>
+            <h1 className="h1 font-playfair-display text-slate-100">开启您的在线学习</h1>
           </div>
 
           {/* Hero image */}
@@ -30,5 +30,10 @@ export default function HeroAbout() {
         </div>
       </div>
     </section>
+
+
+
+
+    </>
   )
 }

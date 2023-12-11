@@ -39,9 +39,17 @@ export default function Header({ mode = 'dark' }: {
               <li>
                 <Link href="/about" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">我们的公司</Link>
               </li>
-              <li>
-                <Link href="/contact" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">我们的支持</Link>
-              </li>
+              <Dropdown title="我们的支持">
+                <li>
+                  <Link href="/contact" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">联系我们</Link>
+                </li>
+                <li>
+                  <Link href="/faq" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">FAQ</Link>
+                </li>
+                <li>
+                  <Link href="/learning" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">在线学习</Link>
+                </li>
+              </Dropdown>
               {/* 1st level: hover */}
             </ul>
 

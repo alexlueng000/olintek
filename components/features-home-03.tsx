@@ -43,7 +43,7 @@ export default function FeaturesHome03() {
 
                 <div className='flex justify-center mt-10'>
                   <a
-                    href="#"
+                    href="/products/skyload_iq"
                     className="w-1/3 rounded bg-lime-500 px-12 py-3 text-base font-medium text-white shadow focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
                   >
                     了解详情
@@ -74,7 +74,7 @@ export default function FeaturesHome03() {
 
                 <div className='flex justify-center mt-10'>
                   <a
-                    href="#"
+                    href="/products/skycube_iq"
                     className="w-1/3 rounded bg-lime-500 px-12 py-3 text-base font-medium text-white shadow focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
                   >
                     了解详情
@@ -104,7 +104,7 @@ export default function FeaturesHome03() {
 
               <div className='flex justify-center mt-10'>
                 <a
-                  href="#"
+                  href="/products/skyoptimizer"
                   className="w-1/3 rounded bg-lime-500 px-12 py-3 text-base font-medium text-white shadow focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
                 >
                   了解详情
