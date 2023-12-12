@@ -24,14 +24,14 @@ export default function Target1() {
 
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-right" data-aos-delay="200" data-aos-anchor="[data-aos-id-target]">
-                <Image className="mx-auto md:max-w-none h-full" src={Pat} width={540} height={600} alt="Features 02" />
+                <Image className="mx-auto md:max-w-none h-full" src={Pat} width={540} height={720} alt="Features 02" />
               </div>
 
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
                   {/* <div className="font-architects-daughter text-xl text-purple-600 mb-2" data-aos="fade-left" data-aos-anchor="[data-aos-id-target]">Be the change you want to see</div> */}
-                  <div className="mt-6" data-aos="fade-left" data-aos-delay="200" data-aos-anchor="[data-aos-id-target]">
+                  <div data-aos="fade-left" data-aos-delay="200" data-aos-anchor="[data-aos-id-target]">
                     <h4 className="h4 mb-2"><span className="text-purple-600">.</span> 我们了解您的挑战</h4>
                     <p className="text-lg text-gray-400 leading-relaxed">在这个快速变化的数字时代，将技术创新有效地应用于航空物流领域是一项极具挑战性的使命。作为航空物流行业的专家，我们秉持着结合航空物流和信息技术的最佳实践，致力于协助客户在其运营过程中不断实现优化和改进，从而为客户创造商业价值。</p>
                   </div>

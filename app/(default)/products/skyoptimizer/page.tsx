@@ -38,19 +38,19 @@ export default function SkyOptimizer() {
         <div
           className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:items-center lg:justify-start lg:px-8 h-full"
         >
-          <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h1 className="text-5xl font-extrabold sm:text-6xl lg:text-7xl">
+          <div className="max-w-xl text-left ltr:sm:text-left rtl:sm:text-right">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold">
             SkyOptimizer
             </h1>
 
-            <p className="mt-4 max-w-xl font-bold sm:text-lg/relaxed">
+            <p className="mt-4 max-w-xl text-lg md:text-xl">
             聪明有智慧交给我们、游戏规则的运用交给您。
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4 text-center justify-center">
+            <div className="mt-4 flex flex-wrap gap-4 text-center justify-start">
               <a
-                href="#"
-                className="block w-full rounded bg-lime-500 px-12 py-3 text-base font-medium text-white shadow focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
+                href="/contact"
+                className="block w-full rounded bg-lime-500 px-12 py-3 text-base font-medium text-white shadow focus:outline-none focus:ring active:bg-green-500 sm:w-auto hover:bg-lime-600"
               >
                 联系我们
               </a>

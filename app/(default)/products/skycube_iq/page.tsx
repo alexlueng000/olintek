@@ -1,7 +1,6 @@
-export const metadata = {
-  title: 'OLINTEK - Skyload iQ',
-  description: 'Page description',
-}
+'use client'
+
+import { useState } from 'react';
 
 import Image from 'next/image'
 
@@ -10,6 +9,17 @@ import Customers01 from '@/public/images/customers-01.jpg'
 import Customers02 from '@/public/images/customers-02.jpg'
 
 export default function SkycubeIq() {
+
+  const [hover, setHover] = useState(false);
+
+  const handleMouseEnter = () => {
+    setHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHover(false);
+  };
+
   return (
     <>
       {/* <Hero /> */}
@@ -25,30 +35,32 @@ export default function SkycubeIq() {
         <div
           className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:items-center lg:justify-start lg:px-8 h-full"
         >
-          <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h1 className="text-5xl font-extrabold sm:text-6xl lg:text-7xl">
+          <div className="max-w-xl text-left ltr:sm:text-left rtl:sm:text-right">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold">
             SkyCube iQ
             </h1>
 
-            <p className="mt-4 max-w-xl font-bold sm:text-lg/relaxed">
+            <p className="mt-4 max-w-xl text-lg md:text-xl">
             把智能订舱决策交给我们，您可以获得最佳收益的装载方案。
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4 text-center justify-center">
-              <a
-                href="#"
-                className="block w-full rounded bg-lime-500 px-12 py-3 text-base font-medium text-white shadow focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
-              >
-                联系我们
-              </a>
+            <div className="mt-4 flex flex-wrap gap-4 text-center justify-start">
+                <a
+                  href="/contact"
+                  className={`block w-full rounded px-12 py-3 text-base font-medium shadow sm:w-auto ${hover ? 'bg-white text-lime-600' : 'bg-lime-500 text-white'}`}
+                >
+                  联系我们
+                </a>
 
-              <a
-                href="#"
-                className="block w-full rounded bg-white px-12 py-3 text-base font-medium text-lime-500 shadow active:text-rose-500 sm:w-auto"
-              >
-                在线演示
-              </a>
-            </div>
+                <a
+                  href="#"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                  className="block w-full rounded bg-white px-12 py-3 text-base font-medium text-lime-500 shadow hover:text-white hover:bg-lime-600 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+                >
+                  在线演示
+                </a>
+              </div>
           </div>
         </div>
 

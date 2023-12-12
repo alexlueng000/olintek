@@ -139,6 +139,21 @@ export default function RequestDemo() {
                     </div>
                   </div>
 
+                  {
+                    selectedButton === 'skyload' && (
+                      <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+                        <div className="sm:w-1/2">
+                          <label className="block text-sm font-medium mb-1" htmlFor="city">航空公司代码 <span className="text-rose-500">*</span></label>
+                          <input id="city" className="form-input py-2 w-full" type="text" required />
+                        </div>
+                        <div className="sm:w-1/2">
+                          <label className="block text-sm font-medium mb-1" htmlFor="pcode">提单结算代码 <span className="text-rose-500">*</span></label>
+                          <input id="pcode" className="form-input py-2 w-full" type="text" required />
+                        </div>
+                      </div>
+                    )
+                  }
+
                   <div>
                     <label className="block text-sm font-medium mb-1" htmlFor="country">国家 <span className="text-rose-500">*</span></label>
                     <select id="country" className="form-select py-2 w-full" required>
