@@ -1,11 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-
-import Logo from '../../../components/ui/logo'
-
-import Image from 'next/image'
-import Work from '@/public/images/reset-password-bg.jpg'
+import { Icon } from 'react-icons-kit';
+import {arrowRight} from 'react-icons-kit/metrize/arrowRight'
+import {blockMenu} from 'react-icons-kit/metrize/blockMenu'
 
 export default function RequestDemo() {
 
@@ -17,83 +15,62 @@ export default function RequestDemo() {
 
   return (
     <>
-      {/* Right side */}
-      <div className="relative hidden md:block md:w-1/2 bg-slate-500" aria-hidden="true">
+      <div className="relative max-w-6xl mx-auto h-0 pointer-events-none -z-1" aria-hidden="true">
+        <svg className="absolute top-0 right-0 transform translate-x-1/2 -mr-16 dark:opacity-40" width="800" height="502" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="350" cy="150" r="350" fill="url(#customGradient1)" fillOpacity=".6" />
+          <circle cx="250" cy="350" r="150" fill="url(#customGradient2)" fillOpacity=".4" />
+          <defs>
+            <radialGradient id="customGradient1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(80 140 260) scale(300)">
+              <stop stopColor="#58a6ff" />
+              <stop offset="1" stopColor="#58a6ff" stopOpacity=".01" />
+            </radialGradient>
+            <radialGradient id="customGradient2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(100 -30 260) scale(150)">
+              <stop stopColor="#ffc107" />
+              <stop offset="1" stopColor="#ffc107" stopOpacity=".01" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
 
-        {/* Bg image */}
-        <div className="absolute inset-0" data-aos="fade">
-          <Image className="opacity-10 w-full h-full object-cover" src={Work} width={760} height={900} priority alt="Background" />
-        </div>
+      <section className="relative">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+          <div className="pt-32 pb-6 md:pt-20 md:pb-20">
 
-        {/* Quote */}
-        <div className="min-h-screen h-full flex flex-col justify-center">
-          <div className="px-5 sm:px-6">
-            <div className="w-full max-w-lg mx-auto">
-
-
-              <div className="space-y-3">
-                <blockquote className="text-white font-bold mt-8 md-20">我们欢迎您试用我们的产品，并将我们的装载结果与您目前正在进行评估或手上现有的系统进行比较。同时也将我们的功能与竞争对手产品的功能进行比较，我们自信您对差异会感到惊讶。</blockquote>
-              </div>
-
-              {/* <h2 className="h3 md:text-4xl font-playfair-display text-slate-100 mb-4">立即申请试用</h2> */}
-              <h2 className="text-4xl text-white font-bold mb-4 mt-10">导入简单！ 免费试用</h2>
-    
-              <div className="flex flex-col items-start font-bold mt-4  p-6 rounded-lg shadow-2xl">
-
-                <ul className="list-disc list-inside text-slate-300 mb-4 space-y-2">
-                  <li>优势 1：完整的数据汇入模板，您所要做的就是按照字段说明与数据格式要求汇入数据，因此无需与我们讨论麻烦的需求定义。</li>
-                  <li>优势 2：如果您在试用期间有任何问题，请立即询问我们。</li>
-                  <li>优势 3：免费试用 “30天” 足以验证系统的可用性和有效性。</li>
-                </ul>
-
-                <p className="text-slate-300 mb-4">
-                  您可以填写申请表单，告诉我们相关信息。我们将审核用户申请表，于3个工作日内将试用账号通过邮件发送给您。
-                </p>
-
-                <p className="text-slate-300 mb-4">
-                  针对学术与教育用户，请与我们取得联系：<a href="mailto:service@olintek.com" className="text-blue-400 hover:text-blue-300">service@olintek.com</a>
-                </p>
-
-                <p className="text-slate-300 mb-4">
-                  免费试用期间的授权数量限制信息<strong className='text-white'>（限SkyLoad iQ）</strong>
-                </p>
-
-                <ul className="list-disc list-inside text-slate-300 mb-4">
-                  <li>登录使用者：2人（<label><span className="text-rose-500">*</span></label> 机场配载规划员，初期设置时只能注册1人）</li>
-                  <li>机场配载规划员，如需2人以上时，请单独与我们联系。</li>
-                </ul>
-
-              </div>
-
-              <div>
+            {/* Page header */}
+            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+              <h3 className="h3 font-bold font-red-hat-display mb-4">试用申请</h3>
+              <p className="text-xl text-left text-gray-600 dark:text-gray-400">您可以填写申请表单，告诉我们相关信息。我们将审核用户申请表，于3个工作日内将试用账号通过邮件发送给您。
+              </p>
+              <div className='mt-4'>
+                <div className='flex'>
+                    <Icon icon={arrowRight} size={22} className="text-lime-500 mr-2" /> 
+                    <p className="text-black mb-4">
+                    针对学术与教育用户，请与我们取得联系：<a href="mailto:service@olintek.com" className="text-blue-400 hover:text-blue-300">service@olintek.com</a>
+                    </p>
+                </div>
+                <div className='text-left'>
+                  <div className='flex'>
+                    <Icon icon={blockMenu} size={22} className="text-lime-500 mr-2" />
+                    <p className="text-black mb-4">
+                      免费试用期间的授权数量限制信息<strong className='text-black'>（限SkyLoad iQ）</strong>
+                    </p>
+                  </div>
+                
+                  <ul className="list-inside text-black mb-4">
+                    <li className='mb-2'>1. 登录使用者：2人（<label><span className="text-rose-500">*</span></label>机场配载规划员，初期设置时只能注册1人）</li>
+                    <li>2. 机场配载规划员，如需2人以上时，请单独与我们联系。</li>
+                  </ul>
+                </div>
+                
                 
               </div>
+              
             </div>
-          </div>
-        </div>
 
-      </div> 
-
-            {/* Content */}
-      <div className="w-full md:w-1/2">
-
-        <div className="min-h-screen h-full flex flex-col justify-center">
-
-          <div className="px-5 sm:px-6 py-8">
-            <div className="w-full max-w-md mx-auto">
-
-              {/* Site branding */}
-              <div className="mb-6">
-                {/* Logo */}
-                <Logo />
-              </div>
-
-              <h2 className="h3 font-playfair-display font-bold text-slate-900 mb-12">试用申请</h2>
-
-              {/* Form */}
-              <form>
+            {/* Contact form */}
+            <form className='max-w-xl mx-auto'>
                 <div className="space-y-4">
-
+                  
                   <div className='flex items-center space-x-4'>
                     <label className="block text-sm font-medium mb-1" htmlFor="email">试用产品 <span className="text-rose-500">*</span></label>
                     <button className={`btn font-bold  ${selectedButton === 'skyload' ? 'bg-lime-500 text-white' : 'bg-white text-black'}  group`} onClick={() => handleButtonClick('skyload')}>
@@ -176,11 +153,11 @@ export default function RequestDemo() {
                 </div>
               </form>
 
-            </div>
           </div>
-
         </div>
-      </div>   
+      </section>
+
+
     </>
   )
 }

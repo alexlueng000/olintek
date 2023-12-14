@@ -7,7 +7,7 @@ export default function Clients1() {
   
             {/* Section header */}
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-              <h1 className="h2 mb-6">他们信任我们</h1>
+              <h1 className="text-4xl font-bold mb-6">他们信任我们</h1>
               <p className="text-xl text-left text-slate-500">我们通过与客户携手合作，共同应对变化和挑战，建立牢固的信任和认可。我们凭借丰富的知识和专业技能，在航空物流领域展现卓越影响力并作出重要贡献。</p>
             </div>
   
@@ -45,14 +45,14 @@ export default function Clients1() {
   
             </div>
 
-            <div className="flex justify-center mt-12">
+            {/* <div className="flex justify-center mt-12">
               <a
                 href="/companies"
                 className="block w-full rounded bg-lime-500 px-12 py-3 text-base font-medium text-white shadow focus:outline-none focus:ring active:bg-green-500 sm:w-auto"
               >
                 合作伙伴
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

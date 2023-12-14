@@ -17,7 +17,7 @@ export default function FeaturesHome03() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="text-5xl font-bold font-playfair-display text-black mb-10">智能化软件为您所用</h2>
+            <h2 className="text-4xl font-bold font-playfair-display text-black mb-10">智能化软件为您所用</h2>
             <p className='max-w-6xl text-base text-left text-slate-500 sm:text-xl mt-6'>智能化决策的AI技术，展现可视化和自动化的装载优化，在现代航空物流中具有关键性的地位，可大幅提升装载过程的效率和准确性。我们在信息技术和人工智能领域的最新研究成果，将「组合优化」方法实际应用于现实环境。这不仅是基于过去成功案例积累的宝贵经验，同时也是在持续创新的推动下，不断追求更高水平的效能和成果</p>
           </div>
 
