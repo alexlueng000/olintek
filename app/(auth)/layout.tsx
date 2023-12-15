@@ -25,9 +25,9 @@ export default function AuthLayout({
   })
 
   return (
-    <div>
+    <div className='flex flex-col min-h-screen'>
       <Header mode='light' />
-        <main className="grow">
+        <main className="flex-grow">
           {children}
         </main>
       <Footer />

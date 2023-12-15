@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
+    "@react-email/components": "0.0.12",
     "@types/node": "^20.8.2",
+    "@types/nodemailer": "^6.4.14",
     "@types/react": "^18.2.24",
     "@types/react-dom": "^18.2.9",
     "aos": "^3.0.0-beta.6",
@@ -18,8 +20,11 @@
     "date-fns": "^2.30.0",
     "next": "^13.5.4",
     "next-contentlayer": "^0.3.4",
+    "nodemailer": "^6.9.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-email": "1.10.0",
+    "react-hook-form": "^7.49.2",
     "react-icons-kit": "^2.0.0",
     "typescript": "^5.2.2"
   },
