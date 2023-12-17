@@ -3,9 +3,9 @@ import { Text } from "@react-email/text";
 import { Section } from "@react-email/section";
 import { Container } from "@react-email/container";
 
-import { FormData } from '@/components/contact';
+import { ContactFormData } from '@/components/contact';
 
-export default function ContactEmail(data: FormData) {
+export default function ContactEmail(data: ContactFormData) {
 
     // console.log("building a nice email: ", data);
 

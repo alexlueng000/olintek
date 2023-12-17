@@ -41,6 +41,15 @@ module.exports = {
         wider: '0.02em',
         widest: '0.4em',
       },
+      keyframes: {
+        spin: {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' },
+        },
+      },
+      animation: {
+        spin: 'spin 1s linear infinite',
+      },
     },
   },
   plugins: [

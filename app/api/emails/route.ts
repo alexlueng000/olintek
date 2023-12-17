@@ -3,7 +3,8 @@ import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 import ContactEmail from "../../../components/contact_template";
     // import { render } from "@react-email/render";
-import { FormData } from "@/components/contact";
+import { ContactFormData } from "@/components/contact";
+import { ApplyFormData } from "@/components/apply";
 
 const { render } = require("@react-email/render");
 
@@ -11,7 +12,7 @@ export async function POST(request: NextRequest) {
 
     const { company, position, department, email, phone, country, message, name } = await request.json();
 
-    const emailPayload: FormData = {
+    const contactEmailPayload: ContactFormData = {
         company,
         position,
         department,
@@ -35,7 +36,7 @@ export async function POST(request: NextRequest) {
         from: process.env.MY_EMAIL,
         to: 'alexlueng@icloud.com',
         subject: 'Olintek Contact Information',
-        html: render(ContactEmail(emailPayload))
+        html: render(ContactEmail(contactEmailPayload))
     };
     
     const sendMailPromise = () => new Promise((resolve, reject) => {

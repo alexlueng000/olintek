@@ -2,12 +2,11 @@
 'use client'
 
 import { useForm } from 'react-hook-form'
-import { sendEmail } from '@/utils/send_email'
-// import { useRouter } from 'next/router'
+import { sendContactEmail } from '@/utils/send_email'
 import { useRouter } from 'next/navigation'
 
 
-export type FormData = {
+export type ContactFormData = {
     company: string;
     position: string;
     department: string;
@@ -25,13 +24,13 @@ export type SendContactEmailResponse = {
 
 export default function Contact() {
 
-    const { register, handleSubmit, watch, formState: { errors } } = useForm<FormData>()
+    const { register, handleSubmit, watch, formState: { errors } } = useForm<ContactFormData>()
     const router = useRouter()
 
-    const onSubmit = async (data: FormData) => {
+    const onSubmit = async (data: ContactFormData) => {
         console.log(data)
         try {
-            const response = await sendEmail(data)
+            const response = await sendContactEmail(data)
             if (response.status === 200) {
                 router.push('/contact/success')
             } else {

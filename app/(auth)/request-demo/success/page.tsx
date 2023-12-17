@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function ContactSuccess() {
+export default function ApplySuccess() {
 
     return (
         <main className="grow border-b border-slate-200">
@@ -17,7 +17,7 @@ export default function ContactSuccess() {
                     </div>
                     <h1 className="h1 font-playfair-display text-slate-800 mb-4">Congratulations</h1>
                 </div>
-                <p className="text-xl text-slate-500">感谢你的咨询！我们会尽快回复！</p>
+                <p className="text-xl text-slate-500">我们已经收到了你的申请！我们会尽快回复！</p>
                 <div className="mt-8">
                     <Link className="btn text-white bg-lime-500 hover:bg-lime-600" href="/">回到首页</Link>
                 </div>
