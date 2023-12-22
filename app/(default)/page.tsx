@@ -10,12 +10,14 @@ import Target1 from '@/components/target1'
 import Clients1 from '@/components/clients1'
 import Different from '@/components/different'
 import Cta from '@/components/cta'
+import Challenge from '@/components/challenge'
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Features03 /> {/* 智能化软件为您所用 */}
+      {/* <Challenge /> */}
       
       {/* <Target1 /> 是什么让我们与众不同 */}
       <Different /> {/* 是什么让我们与众不同1 */}
