@@ -3,16 +3,9 @@
 import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Image from 'next/image'
-import TopImage from '@/public/images/feature-illustration.png'
-import FeaturesBg01 from '@/public/images/features-home-bg-01.png'
-import FeaturesElement01 from '@/public/images/features-home-element-01.png'
-import FeaturesElement02 from '@/public/images/features-home-element-02.png'
-import FeaturesElement03 from '@/public/images/features-home-element-03.png'
-import Feature01 from '@/public/images/feature01.jpg'
-import Feature02 from '@/public/images/feature02.jpg'
-import Feature03 from '@/public/images/feature03.jpg'
-import Feature04 from '@/public/images/feature04.jpg'
-import Feature05 from '@/public/images/feature05.jpg'
+import Feature01 from '@/public/images/Feature01.jpg'
+import Feature03 from '@/public/images/Feature03.jpg'
+import Feature04 from '@/public/images/Feature04.jpg'
 
 export default function Different() {
   
@@ -30,15 +23,6 @@ export default function Different() {
 
   return (
     <section className="relative max-w-full mx-auto bg-slate-100">
-
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
-      {/* <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
-      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div> */}
-
-      {/* <div
-        className="absolute inset-0 rounded-tl-[100px] mb-24 md:mb-0 bg-gradient-to-b from-slate-100 pointer-events-none -z-10"
-        aria-hidden="true"
-        /> */}
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20 md:pb-20">
