@@ -5,7 +5,7 @@ import { ApplyFormData, SendApplyEmailResponse } from '@/components/apply';
 
 export function sendApplyEmail(data: ApplyFormData): Promise<SendApplyEmailResponse>  {
 
-  const apiEndpoint = '/api/apply';
+  const apiEndpoint = '/api/emails';
 
   return fetch(apiEndpoint, {
     method: 'POST',

@@ -43,15 +43,15 @@ export default function Stats() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6">
-      <div className="w-full mx-auto grid gap-12 sm:grid-cols-2 md:grid-cols-6 md:-mx-5 md:gap-0 items-start md:max-w-none">
+      <div className="w-full mx-auto grid gap-12 sm:grid-cols-2 md:grid-cols-3 md:-mx-5 md:gap-4 items-start md:max-w-none">
 
         {stats.map((stat, index) => (
-          <div key={index} className="relative text-center md:px-5">
-            <h4 className="font-inter-tight text-2xl md:text-3xl font-bold tabular-nums mb-2 text-lime-500">
+          <div key={index} className="relative text-center py-2 md:px-5">
+            <h4 className="font-inter-tight text-xl md:text-6xl font-bold tabular-nums text-lime-500">
               <Counter number={stat.number} />
               {/* {stat.suffix} */}
             </h4>
-            <p className="text-sm text-black text-bold">{stat.text}</p>
+            <p className="text-md text-bold">{stat.text}</p>
           </div>
         ))}
 

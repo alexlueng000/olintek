@@ -36,18 +36,26 @@ export default function Header({ mode = 'dark' }: {
                   </li>
                 </Dropdown>
               
-              <li>
-                <Link href="/about" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">我们的公司</Link>
-              </li>
-              <Dropdown title="我们的支持">
+              <Dropdown title="我们的公司">
+                <li>
+                  <Link href="/about" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">关于我们</Link>
+                </li>
+                <li>
+                  <Link href="/recruit" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">人才招募</Link>
+                </li>
+                <li>
+                  <Link href="/partners" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">合作伙伴</Link>
+                </li>
                 <li>
                   <Link href="/contact" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">联系我们</Link>
                 </li>
+              </Dropdown>
+              <Dropdown title="我们的支持">
                 <li>
-                  <Link href="/faq" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">FAQ</Link>
+                  <Link href="/lessons" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-2 py-2 flex items-center transition duration-150 ease-in-out">单点课程学习</Link>
                 </li>
                 <li>
-                  <Link href="/learning" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">在线学习</Link>
+                  <Link href="/faq" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">常见问题集</Link>
                 </li>
               </Dropdown>
               {/* 1st level: hover */}

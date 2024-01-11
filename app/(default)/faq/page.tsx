@@ -1,45 +1,19 @@
-import Image from 'next/image'
-import HeroImage from '@/public/images/about-hero.jpg'
-import TurnOn from '@/public/images/turn_on.jpg'
-import Universe from '@/public/images/guillermo.jpg'
-import Henning from '@/public/images/henning.jpg'
+import Hero from './hero'
+
 
 export default function FAQ() {  
   return (
     <>
     <section className="relative">
 
-      {/* Dark background */}
-      <div className="absolute inset-0 bg-slate-800 pointer-events-none -z-10 mb-48 lg:mb-0 lg:h-[30rem]" aria-hidden="true">
-        <div className="w-full h-full" data-aos="fade">
-          <Image className="opacity-10 w-full h-full object-cover" src={Henning} width={1440} height={497} priority alt="Hero" />
-        </div>
-      </div>
+      <Hero />
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt- md:pt-24">
+      <div className="max-w-full mx-auto px-4 sm:px-6 bg-slate-100 flex justify-center">
+        <div className="max-w-6xl py-12 md:py-20 border-t border-gray-800 lg:border-0 lg:pt-8">
 
           {/* Section header */}
-          <div className="max-w-4xl mx-auto text-center pb-8">
-            <h1 className="h1 font-playfair-display text-slate-100">您关心的问题都在这里</h1>
-          </div>
-
-          {/* Hero image */}
-          <div className="flex justify-center items-center mt-16" data-aos="fade-up" data-aos-delay="100" >
-            <Image className="mx-auto" src={HeroImage} width={1024} height={576} priority alt="About intro" />
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 mt-16">
-        <div className="py-12 md:py-20 border-t border-gray-800 lg:border-0 lg:pt-8">
-
-          {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12">
-            <h2 className="h2">常见问题</h2>
+          <div className="max-w-3xl mx-auto text-center pb-12 pt-12">
+            <p className="text-4xl font-bold">常见问题</p>
           </div>
 
           {/* Faqs */}
@@ -72,7 +46,9 @@ export default function FAQ() {
 
         </div>
       </div>
+      
     </section>
+
 
 
     </>

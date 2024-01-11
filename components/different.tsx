@@ -8,6 +8,11 @@ import FeaturesBg01 from '@/public/images/features-home-bg-01.png'
 import FeaturesElement01 from '@/public/images/features-home-element-01.png'
 import FeaturesElement02 from '@/public/images/features-home-element-02.png'
 import FeaturesElement03 from '@/public/images/features-home-element-03.png'
+import Feature01 from '@/public/images/feature01.jpg'
+import Feature02 from '@/public/images/feature02.jpg'
+import Feature03 from '@/public/images/feature03.jpg'
+import Feature04 from '@/public/images/feature04.jpg'
+import Feature05 from '@/public/images/feature05.jpg'
 
 export default function Different() {
   
@@ -24,14 +29,19 @@ export default function Different() {
   }, []) 
 
   return (
-    <section className="relative bg-slate-100">
+    <section className="relative max-w-full mx-auto bg-slate-100">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
-      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+      {/* <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
+      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div> */}
+
+      {/* <div
+        className="absolute inset-0 rounded-tl-[100px] mb-24 md:mb-0 bg-gradient-to-b from-slate-100 pointer-events-none -z-10"
+        aria-hidden="true"
+        /> */}
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-12 md:pt-20">
+        <div className="pt-12 md:pt-20 md:pb-20">
 
           {/* Section content */}
           <div className="md:grid md:grid-cols-12 md:gap-6">
@@ -39,8 +49,8 @@ export default function Different() {
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">是什么让我们与众不同</h3>
-                <p className="text-lg text-gray-600">「现场实践经验的专家」 x 「最强的智能化运算引擎」</p>
+                <h2 className="text-4xl font-bold font-playfair-display text-black mb-10">是什么让我们与众不同</h2>
+                <p className="text-lg text-slate-500 mt-6">「现场实践经验的专家」 x 「最强的智能化运算引擎」</p>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
@@ -121,10 +131,8 @@ export default function Different() {
                     unmount={false}                  
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg01} width={500} height={375} alt="Features bg" />
-                      <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement01} width={500} height={147} alt="Element 01" style={{ top: '22%' }} />
-                      <Image className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500" src={FeaturesElement02} width={500} height={158} alt="Element 02" style={{ top: '39%' }} />
-                      <Image className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000" src={FeaturesElement03} width={500} height={167} alt="Element 03" style={{ top: '77%' }} />
+                      <Image className="md:max-w-none mx-auto rounded" src={Feature04} width={500} height={375} alt="Features bg" />
+                  
                       
                     </div>
                   </Transition>
@@ -142,10 +150,7 @@ export default function Different() {
                     unmount={false}                  
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg01} width={500} height={375} alt="Features bg" />
-                      <Image className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000" src={FeaturesElement03} width={500} height={167} alt="Element 03" style={{ top: '18%' }} />
-                      <Image className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500" src={FeaturesElement02} width={500} height={158} alt="Element 02" style={{ top: '40%' }} />
-                      <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement01} width={500} height={147} alt="Element 01" style={{ top: '79%' }} />
+                      <Image className="md:max-w-none mx-auto rounded" src={Feature03} width={500} height={375} alt="Features bg" />
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -162,10 +167,7 @@ export default function Different() {
                     unmount={false}                  
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg01} width={500} height={375} alt="Features bg" />
-                      <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement01} width={500} height={147} alt="Element 01" style={{ top: '22%' }} />
-                      <Image className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500" src={FeaturesElement02} width={500} height={158} alt="Element 02" style={{ top: '39%' }} />
-                      <Image className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000" src={FeaturesElement03} width={500} height={167} alt="Element 03" style={{ top: '77%' }} />
+                      <Image className="md:max-w-none mx-auto rounded" src={Feature04} width={500} height={375} alt="Features bg" />
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -182,10 +184,7 @@ export default function Different() {
                     unmount={false}                  
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={FeaturesBg01} width={500} height={375} alt="Features bg" />
-                      <Image className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement01} width={500} height={147} alt="Element 01" style={{ top: '22%' }} />
-                      <Image className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500" src={FeaturesElement02} width={500} height={158} alt="Element 02" style={{ top: '39%' }} />
-                      <Image className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000" src={FeaturesElement03} width={500} height={167} alt="Element 03" style={{ top: '77%' }} />
+                      <Image className="md:max-w-none mx-auto rounded" src={Feature01} width={500} height={375} alt="Features bg" />
                     </div>
                   </Transition>
                 </div>

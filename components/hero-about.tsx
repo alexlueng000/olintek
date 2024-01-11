@@ -1,30 +1,28 @@
 import Image from 'next/image'
-import HeroImage from '@/public/images/about-hero.jpg'
-import IntroImage from '@/public/images/about-intro.jpg'
-import TurnOn from '@/public/images/turn_on.jpg'
+
+import About from '@/public/images/about-picture.jpg'
 
 export default function HeroAbout() {  
   return (
     <section className="relative">
 
       {/* Dark background */}
-      <div className="absolute inset-0 bg-slate-900 pointer-events-none -z-10 mb-48 lg:mb-0 lg:h-[30rem]" aria-hidden="true">
+      <div className="absolute inset-0 bg-teal-950 pointer-events-none -z-10" aria-hidden="true">
         <div className="w-full h-full" data-aos="fade">
-          <Image className="opacity-10 w-full h-full object-cover" src={TurnOn} width={1440} height={497} priority alt="Hero" />
+          <Image className="opacity-10 w-full h-full object-cover" src={About} width={1440} height={497} alt="Hero" />
         </div>
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-32 md:pt-40">
+        <div className="pt-32 pb-28 md:pt-40 md:pb-36">
 
           {/* Section header */}
-          <div className="max-w-4xl mx-auto text-center pb-16">
-            <h1 className="h1 font-playfair-display text-slate-100">创造一个超越经验的世界</h1>
-          </div>
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="text-center">
 
-          {/* Hero image */}
-          <div className="flex justify-center items-center mt-20" data-aos="fade-up" data-aos-delay="100" >
-            <Image className="mx-auto" src={HeroImage} width={1024} height={576} priority alt="About intro" />
+              <h1 className="h1 font-playfair-display text-slate-100 mb-4">创造一个超越经验的世界</h1>
+            </div>
+
           </div>
 
         </div>

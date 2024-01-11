@@ -6,7 +6,7 @@ export default function AboutContent() {
 
           <div className="max-w-3xl mx-auto">
             <div className="text-lg text-slate-500 mt-20">
-              <h2 className="h3 font-playfair-display text-slate-800 mb-4 mt-20">关于我们</h2>
+              <h2 className="h3 font-playfair-display text-slate-800 mb-12 mt-12 text-center">关于我们</h2>
               <p className="mb-8">
               OLINTEK 成立于2016年，专注在航空物流领域，拥有深厚的航空配载专业知识和实践经验。我们的优势在于将”组合优化、人工智能”算法的研究成果商业化，让客户在竞争激烈的航空物流市场中，更具竞争力。我们将专业知识和技术能力相结合，并保持对客户需求的敏感度，贴近客户观点的解决方案，提供更优质的服务。
               </p>
