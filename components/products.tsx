@@ -42,7 +42,7 @@ export default function Products() {
                     </p>
                     <div className='flex justify-center mt-8'>
 
-                        <a className="rounded px-12 py-3 inline-flex items-center text-blue-50 bg-lime-500 hover:bg-lime-600 group shadow-sm" href="apply.html">
+                        <a className="rounded px-12 py-3 inline-flex items-center text-blue-50 bg-lime-500 hover:bg-lime-600 group shadow-sm" href="/products/skyload_iq">
                         了解详情
                         <span className="tracking-normal text-white-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2">
                             <svg className="fill-current" width="12" height="10" xmlns="http://www.w3.org/2000/svg">
@@ -73,7 +73,7 @@ export default function Products() {
                         航空公司的配载规划人员，透过直观的 3D 图形，能够清楚地了解飞机货舱内各个 ULD的搭载位置、货物装载密度以及重量分布等关键信息，查看您的飞机还剩下多少个舱位，快速掌握舱位的销售报价，使决策者能够更准确地制定装载计划和进行必要的调整，同时最大化地利用飞机货舱的舱位和重量限制。
                     </p>
                     <div className='flex justify-center mt-8'>
-                        <a className="rounded px-12 py-3 inline-flex items-center text-blue-50 bg-lime-500 hover:bg-lime-600 group shadow-sm" href="apply.html">
+                        <a className="rounded px-12 py-3 inline-flex items-center text-blue-50 bg-lime-500 hover:bg-lime-600 group shadow-sm" href="/products/skycube_iq">
                         了解详情
                         <span className="tracking-normal text-white-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2">
                             <svg className="fill-current" width="12" height="10" xmlns="http://www.w3.org/2000/svg">
@@ -104,7 +104,7 @@ export default function Products() {
                         航空公司的配载规划人员，透过直观的 3D 图形，能够清楚地了解飞机货舱内各个 ULD的搭载位置、货物装载密度以及重量分布等关键信息，查看您的飞机还剩下多少个舱位，快速掌握舱位的销售报价，使决策者能够更准确地制定装载计划和进行必要的调整，同时最大化地利用飞机货舱的舱位和重量限制。
                     </p>
                     <div className='flex justify-center mt-8'>
-                        <a className="rounded px-12 py-3 inline-flex items-center text-blue-50 bg-lime-500 hover:bg-lime-600 group shadow-sm" href="apply.html">
+                        <a className="rounded px-12 py-3 inline-flex items-center text-blue-50 bg-lime-500 hover:bg-lime-600 group shadow-sm" href="/products/skyoptimizer">
                         了解详情
                         <span className="tracking-normal text-white-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2">
                             <svg className="fill-current" width="12" height="10" xmlns="http://www.w3.org/2000/svg">
