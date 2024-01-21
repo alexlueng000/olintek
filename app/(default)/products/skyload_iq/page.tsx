@@ -9,6 +9,11 @@ import skyloadiqP1 from '@/public/images/skyloadiq-p1.png'
 import skyloadiqP2 from '@/public/images/skyloadiq-p2.png'
 
 import skyload from '@/public/images/skyload.png'
+import POS3 from '@/public/images/pos-3.png'
+import Overhang from '@/public/images/overhang-1.png'
+import Spread from '@/public/images/spreader.png'
+import LIR from '@/public/images/LIR.png'
+
 
 export default function SkyloadIq() {
 
@@ -77,7 +82,7 @@ export default function SkyloadIq() {
             </p> */}
 
             {/* 1st Feature */}
-            <div className="flex flex-col-reverse md:flex-row-reverse md:items-center md:space-x-reverse lg:space-x-reverse xl:space-x-reverse md:space-x-8 lg:space-x-16 xl:space-x-20 space-y-4 space-y-reverse md:space-y-0">
+            <div className="">
 
 {/* Content */}
 {/* <div className="md:min-w-[30rem]" data-aos="fade-left">
@@ -98,7 +103,7 @@ export default function SkyloadIq() {
 {/* Image */}
 <div className="flex justify-center items-center" data-aos="fade-right">
   <div className="relative">
-    <div className="absolute inset-0 pointer-events-none border-2 border-slate-200 -translate-x-4 -translate-y-4 -z-10" aria-hidden="true"></div>
+    <div className="absolute inset-0 pointer-events-none  -translate-x-4 -translate-y-4 -z-10" aria-hidden="true"></div>
     <Image className="mx-auto md:max-w-none" src={skyload} width={540} height={405} alt="Customer 01" />
   </div>
 </div>
@@ -126,7 +131,7 @@ export default function SkyloadIq() {
                   </h2>
                   <div data-aos="fade-up">
                     <div className="mb-8 text-center">
-                      <p className="text-xl text-slate-500 text-left">我们独家的PPS技术(Position Pattern Service)，应用组合优化技术，依据机型的装载布局设计，以及使用的ULD版本，进行全自动的ULD搭载组合分析。考虑舱位的搭载重量，以及舱位搭载的平衡、危险品的搭载位置与隔离条件…等，智能选择适用的ULD类型和数量，自动配置最佳搭载舱位，以最大程度地利用舱位空间。</p>
+                      <p className="text-xl text-black text-left">我们独家的PPS技术(Position Pattern Service)，应用组合优化技术，依据机型的装载布局设计，以及使用的ULD版本，进行全自动的ULD搭载组合分析。考虑舱位的搭载重量，以及舱位搭载的平衡、危险品的搭载位置与隔离条件…等，智能选择适用的ULD类型和数量，自动配置最佳搭载舱位，以最大程度地利用舱位空间。</p>
                     </div>
                   </div>
                 </div>
@@ -135,7 +140,7 @@ export default function SkyloadIq() {
                 <div className="flex justify-center items-center" data-aos="fade-right">
                   <div className="relative">
                     <div className="absolute inset-0 pointer-events-none border-2 border-slate-200 translate-x-4 -translate-y-4 -z-10" aria-hidden="true"></div>
-                    <Image className="mx-auto md:max-w-none" src={skyloadiqP2} width={540} height={405} alt="Customer 02" />
+                    <Image className="mx-auto md:max-w-none" src={POS3} width={540} height={405} alt="Customer 02" />
                   </div>
                 </div>
 
@@ -150,7 +155,7 @@ export default function SkyloadIq() {
                   </h2>
                   <div data-aos="fade-up">
                     <div className="mb-8 text-center">
-                      <p className="text-xl text-slate-500 text-left">超长尺寸的货物，一般无法使用一个集装板来装载，在现场作业上最常使用并板(凹凸板)的方法来做超长尺寸的货物装载。一般跨板装载作业时，须考虑集装板所能承载的重量之外，更须考虑每个舱位所能搭载的重量限制。支持超长尺寸货物的跨板装载时，自动计算所需要的集装板类型与数量，以及跨板时货物必须撑高的尺寸。</p>
+                      <p className="text-xl text-black text-left">超长尺寸的货物，一般无法使用一个集装板来装载，在现场作业上最常使用并板(凹凸板)的方法来做超长尺寸的货物装载。一般跨板装载作业时，须考虑集装板所能承载的重量之外，更须考虑每个舱位所能搭载的重量限制。支持超长尺寸货物的跨板装载时，自动计算所需要的集装板类型与数量，以及跨板时货物必须撑高的尺寸。</p>
                     </div>
                   </div>
                 </div>
@@ -159,7 +164,7 @@ export default function SkyloadIq() {
                 <div className="flex justify-center items-center" data-aos="fade-right">
                   <div className="relative">
                     <div className="absolute inset-0 pointer-events-none border-2 border-slate-200 translate-x-4 -translate-y-4 -z-10" aria-hidden="true"></div>
-                    <Image className="mx-auto md:max-w-none" src={skyloadiqP2} width={540} height={405} alt="Customer 02" />
+                    <Image className="mx-auto md:max-w-none" src={Overhang} width={540} height={405} alt="Customer 02" />
                   </div>
                 </div>
 
@@ -175,7 +180,7 @@ export default function SkyloadIq() {
                   </h2>
                   <div data-aos="fade-up">
                     <div className="mb-8 text-center">
-                      <p className="text-xl text-slate-500 text-left">当飞机在起飞、爬升、降落以及在飞行中遇到乱流时，装在飞机上的货物受到惯性影响，将产生向前、向后、向上、向左、向右5个方向的冲击。因此、当飞机上装有较重的货物时，必须对货物采取限动措施以及飞机货舱地板承受力的判断，自动计算展延面积及垫板与捆绑辅材的类型与数量。</p>
+                      <p className="text-xl text-black text-left">当飞机在起飞、爬升、降落以及在飞行中遇到乱流时，装在飞机上的货物受到惯性影响，将产生向前、向后、向上、向左、向右5个方向的冲击。因此、当飞机上装有较重的货物时，必须对货物采取限动措施以及飞机货舱地板承受力的判断，自动计算展延面积及垫板与捆绑辅材的类型与数量。</p>
                     </div>
                   </div>
                 </div>
@@ -184,7 +189,7 @@ export default function SkyloadIq() {
                 <div className="flex justify-center items-center" data-aos="fade-right">
                   <div className="relative">
                     <div className="absolute inset-0 pointer-events-none border-2 border-slate-200 translate-x-4 -translate-y-4 -z-10" aria-hidden="true"></div>
-                    <Image className="mx-auto md:max-w-none" src={skyloadiqP2} width={540} height={405} alt="Customer 02" />
+                    <Image className="mx-auto md:max-w-none" src={Spread} width={540} height={405} alt="Customer 02" />
                   </div>
                 </div>
 
@@ -209,7 +214,7 @@ export default function SkyloadIq() {
                 <div className="flex justify-center items-center" data-aos="fade-right">
                   <div className="relative">
                     <div className="absolute inset-0 pointer-events-none border-2 border-slate-200 translate-x-4 -translate-y-4 -z-10" aria-hidden="true"></div>
-                    <Image className="mx-auto md:max-w-none" src={skyloadiqP2} width={540} height={405} alt="Customer 02" />
+                    <Image className="mx-auto md:max-w-none" src={LIR} width={540} height={405} alt="Customer 02" />
                   </div>
                 </div>
 

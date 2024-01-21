@@ -1,3 +1,5 @@
+import BR1 from '@/public/images/br-1.png'
+
 export default function ΩClients1() {
     return (
       <section className="bg-slate-100">
@@ -16,7 +18,7 @@ export default function ΩClients1() {
             <div className="grid gap-2 grid-cols-2 md:grid-cols-4" data-aos-id-clients>
   
               {/* Item */}
-              <div className="flex items-center justify-center h-24 border border-4 border-gray-500 p-2" data-aos="fade-up" data-aos-anchor="[data-aos-id-clients]">
+              {/* <div className="flex items-center justify-center h-24 border border-4 border-gray-500 p-2" data-aos="fade-up" data-aos-anchor="[data-aos-id-clients]">
               <svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100">
                     <text 
                         x="50" 
@@ -30,58 +32,34 @@ export default function ΩClients1() {
                         CI
                     </text>
                 </svg>
-              </div>
+              </div> */}
+
+              <img
+                src={`${BR1.src}`}
+                alt="BR"
+                width={200}
+                height={100}
+              />
+              <img
+                src={`${BR1.src}`}
+                alt="BR"
+                width={200}
+                height={100}
+              />
+              <img
+                src={`${BR1.src}`}
+                alt="BR"
+                width={200}
+                height={100}
+              />
+              <img
+                src={`${BR1.src}`}
+                alt="BR"
+                width={200}
+                height={100}
+              />
   
-              {/* Item */}
-              <div className="flex items-center justify-center h-24 border border-4 border-gray-500 p-2" data-aos="fade-up" data-aos-delay="100" data-aos-anchor="[data-aos-id-clients]">
-                <svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100">
-                    <text 
-                        x="50" 
-                        y="75" 
-                        fontFamily="Verdana" 
-                        fontSize="60" 
-                        fill="#808080" 
-                        fontWeight="bold" 
-                        style={{ letterSpacing: '5px' }}
-                    >
-                        BR
-                    </text>
-                </svg>
-              </div>
-  
-              {/* Item */}
-              <div className="flex items-center justify-center h-24 border border-4 border-gray-500 p-2" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="[data-aos-id-clients]">
-              <svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100">
-                    <text 
-                        x="50" 
-                        y="75" 
-                        fontFamily="Verdana" 
-                        fontSize="60" 
-                        fill="#808080" 
-                        fontWeight="bold" 
-                        style={{ letterSpacing: '5px' }}
-                    >
-                        EK
-                    </text>
-                </svg>
-              </div>
-  
-              {/* Item */}
-              <div className="flex items-center justify-center h-24 border border-4 border-gray-500 p-2" data-aos="fade-up" data-aos-delay="300" data-aos-anchor="[data-aos-id-clients]">
-              <svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100">
-                    <text 
-                        x="50" 
-                        y="75" 
-                        fontFamily="Verdana" 
-                        fontSize="60" 
-                        fill="#808080" 
-                        fontWeight="bold" 
-                        style={{ letterSpacing: '5px' }}
-                    >
-                        MB
-                    </text>
-                </svg>
-              </div>
+
 
   
             </div>

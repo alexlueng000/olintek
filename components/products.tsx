@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Lucina from '@/public/images/Lucina.png'
 import AutoLoadPro from '@/public/images/AutoLoadPro.png'
-import SkyOptimizer from '@/public/images/SkyOptimizer.png'
+import SkyOptimizer from '@/public/images/OLINTEK-LOGO-PNG-1.png'
 
 
 
@@ -37,7 +37,7 @@ export default function Products() {
                     <p className="text-center font-bold text-slate-500 mb-4">
                         Air Cargo Revenue Optimization
                     </p>
-                    <p className="text-black px-4 text-left">
+                    <p className="text-black text-lg text-left">
                     航空公司的货运配载规划人员，透过直观的3D图形，能够清楚地了解飞机货舱内各个ULD的搭载位置、货物装载密度以及重量分布等关键信息，查看您的飞机还剩下多少个舱位，快速掌握舱位的销售报价，使决策者能够更准确地制定CBA的组板装载计划和进行必要的调整，同时最大化地利用飞机货舱的舱位和重量限制，更有效利用ULD的装载空间。
                     </p>
                     <div className='flex justify-center mt-8'>
@@ -69,7 +69,7 @@ export default function Products() {
                     <p className="text-center font-bold text-slate-500 mb-4">
                     Air Cargo Shipment Planning
                     </p>
-                    <p className="text-black px-4 text-left">
+                    <p className="text-black text-lg text-left">
                     包机报价神器：SkyCube iQ，协助GHA、GSA、以及航空货运代理，进一步提升作业效率并确保货物装载质量。可快速制作包机的装载方案与报价，货代的提单预订条件，进行货物量的精准预测，自动进行装载空间的优化计算，快速准确地估算所需的ULD类型和数量，以确保每个ULD的使用效益最大化。
                     </p>
                     <div className='flex justify-center mt-8'>
@@ -91,7 +91,7 @@ export default function Products() {
                 >
                     <div className='mb-6 flex justify-center'>
                         <Image 
-                            className="w-20 h-20 md:w-24 md:h-24 object-cover shadow-sm transition duration-700 ease-out hover:scale-110" 
+                            className="w-16 h-16 md:w-24 md:h-24 object-cover shadow-sm transition duration-700 ease-out hover:scale-110" 
                             src={SkyOptimizer} 
                             alt="SkyLoad iQ" 
                         />
@@ -100,7 +100,7 @@ export default function Products() {
                     <p className="text-center font-bold text-slate-500 mb-4">
                     Automatic Loading Engine
                     </p>
-                    <p className="text-black px-4 text-left">
+                    <p className="text-black text-lg text-left">
                     有智慧的SkyOptimize，是我们强而有力的核心引擎，全自动考虑货物的总重量和体积不超过飞机的容量，同时最大程度地利用舱位的空间。我们提供与外部系统的数据接口，可以灵活的使用SkyOptimizer API的功能来满足与各种系统数据接口的开发需求。例如：与企业内部管理系统的数据接口以及将SkyOptimizer集成到您的系统中。
                     </p>
                     <div className='flex justify-center mt-8'>

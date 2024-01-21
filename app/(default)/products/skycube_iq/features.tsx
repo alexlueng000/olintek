@@ -151,7 +151,7 @@ export default function Features() {
                                 </div>
                             </div>
                             <div className="grow mb-3">
-                                <p className="text-black text-sm">{feature.text}</p>
+                                <p className="text-black text-lg">{feature.text}</p>
                             </div>
                         </div>
                         ))}

@@ -1,7 +1,9 @@
 import Image from 'next/image'
-import Lucina from '@/public/images/Lucina.png'
-import AutoLoadPro from '@/public/images/AutoLoadPro.png'
+import Lucina from '@/public/images/man-6340117_1280.jpg'
+import AutoLoadPro from '@/public/images/laptop-6093394_1280.jpg'
 import SkyOptimizer from '@/public/images/SkyOptimizer.png'
+
+
 
 
 
@@ -14,8 +16,7 @@ export default function Challenges1() {
 
                 {/* Section header */}
                 <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                    <h2 className="text-4xl font-bold font-playfair-display text-black mb-10">空运货物配载打板</h2>
-                    <h2 className='text-4xl font-bold font-playfair-display text-black mb-10'>2大挑战</h2>
+                    <h2 className="text-4xl font-bold font-playfair-display text-black mb-10">空运货物配载打板2大挑战</h2>
                     
                 </div>
 
@@ -29,7 +30,7 @@ export default function Challenges1() {
                 >
                     <div className='mb-6 flex justify-center'>
                         <Image 
-                            className="w-20 h-20 md:w-24 md:h-24 object-cover shadow-xm transition duration-700 ease-out hover:scale-110" 
+                            className="object-cover shadow-xm transition duration-700 ease-out" 
                             src={Lucina} 
                             alt="SkyLoad iQ" 
                         />
@@ -51,7 +52,7 @@ export default function Challenges1() {
                 >
                     <div className='mb-6 flex justify-center'>
                         <Image 
-                            className="w-20 h-20 md:w-24 md:h-24 object-cover shadow-sm transition duration-700 ease-out hover:scale-110" 
+                            className="object-cover shadow-sm transition duration-700 ease-out" 
                             src={AutoLoadPro} 
                             alt="SkyLoad iQ" 
                         />

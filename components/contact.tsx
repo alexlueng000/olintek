@@ -1,90 +1,76 @@
 'use client'
 
+import { useState } from 'react'
+
+// import Logo from '../../../components/ui/logo'
+
 import Link from 'next/link'
-
-import { useForm } from 'react-hook-form'
-import { sendContactEmail } from '@/utils/send_email'
-import { useRouter } from 'next/navigation'
-
+import Image from 'next/image'
+import PageBg from '@/public/images/request-demo-bg.jpg'
+import CustomerAvatar from '@/public/images/customer-avatar-04.jpg'
 import Logo from '@/components/ui/logo'
 
+export default function RequestDemo() {
 
-export type ContactFormData = {
-    company: string;
-    position: string;
-    department: string;
-    email: string;
-    name: string;
-    phone: string;
-    country: string;
-    message: string;
-}
+  const [selectedButton, setSelectedButton] = useState<string | null>('skyload');
 
-export type SendContactEmailResponse = {
-    message: string;
-    status: number;
-}
+  const handleButtonClick = (buttonId: string) => {
+    setSelectedButton(buttonId);
+  };  
 
-export default function Contact() {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log('submit');
+  }
 
-    const { register, handleSubmit, watch, formState: { errors } } = useForm<ContactFormData>()
-    const router = useRouter()
+  return (
+    <>
+      {/* Right side */}
+      <div className="relative hidden md:block md:w-1/2 bg-slate-800" aria-hidden="true">
 
-    const onSubmit = async (data: ContactFormData) => {
-        console.log(data)
-        try {
-            const response = await sendContactEmail(data)
-            if (response.status === 200) {
-                router.push('/contact/success')
-            } else {
-                router.push('/404')
-            }    
+        {/* Bg image */}
+        {/* <div className="absolute inset-0" data-aos="fade">
+          <Image className="opacity-10 w-full h-full object-cover" src={PageBg} width={760} height={900} priority alt="Background" />
+        </div> */}
 
-        } catch (error) {  
-            console.log(error)
-        }
-    }
+        {/* Quote */}
+        <div className="min-h-screen h-full flex flex-col mt-40">
+          <div className="px-5 sm:px-6">
+            <div className="w-full max-w-lg mx-auto">
+              <h2 className="h3 md:text-4xl font-playfair-display text-slate-100 mb-4">联系我们</h2>
+                <p className="text-lg text-slate-300 mb-12">OLINTEK 非常感谢您对本公司的支持与爱护，如果您是对我们的产品有任何疑问、意见或建议，或是相关问题需要替您解答，我们将有专人针对您的问题亲自与您洽谈，谢谢！</p>
 
-    return (
-        <>
-
-            <div className="w-full md:w-2/3 flex justify-center bg-[url(/images/request-bg.jpg)] bg-cover bg-center bg-no-repeat">
-                <div className="absolute inset-0 bg-white bg-opacity-40"></div>
-                <div className="min-h-screen h-full">
-                    <div className="relative px-5 sm:px-6 py-8">
-                        <div className="w-full max-w-md mx-auto">
-                        {/* Quote */}
-                            <div className="max-w-full mx-auto text-center pb-12 md:pb-16 pt-60">
-                                <p className="text-4xl font-extrabold text-black text-left pt-8">联系我们</p>
-                                <div className='mt-4 w-full'>
-                                        <p className="text-xl text-left text-black font-extrabold dark:text-gray-400">OLINTEK 非常感谢您对本公司的支持与爱护，如果您是对我们的产品有任何疑问、意见或建议，或是相关问题需要替您解答，我们将有专人针对您的问题亲自与您洽谈，谢谢！</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div>
+                
+              </div>
             </div>
+          </div>
+        </div>
 
-            <div className="relative hidden md:block md:w-1/3" aria-hidden="true">
-            <section className="relative">
-                <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
+      </div> 
 
+            {/* Content */}
+      <div className="w-full md:w-1/2">
 
-                    <div className="pt-32 pb-6 md:pt-20 md:pb-20">
-                        <div className='flex items-center'>
-                             <Logo />
-                             <a className="text-md pl-4 font-medium text-lime-500 hover:text-indigo-600 dark:hover:text-indigo-400" href="/">
-                                返回首页 -&gt;
-                            </a>
-                        </div>
+        <div className="min-h-screen h-full flex flex-col justify-center">
 
-                        <div className='font-bold pt-4 pb-4 text-lg'>
-                            在线咨询表单
-                        </div>
+          <div className="px-5 sm:px-6 py-8">
+            <div className="w-full max-w-md mx-auto">
 
-                        {/* Contact form */}
-                        <form className="max-w-xl mx-auto" onSubmit={handleSubmit(onSubmit)}>
+              {/* Site branding */}
+              <div className="flex justify-end mb-6">
+                {/* Logo */}
+                <Logo />
+                {/* <h3 className="h3 font-playfair-display text-slate-800 mb-12 ml-16">联系我们</h3> */}
+              </div>
+
+              
+
+              {/* Form */}
+            <form className="max-w-xl mx-auto" >
+                
+                
+            
                         <div className="flex flex-wrap -mx-3 mb-5">
                             <div className="w-full px-3">
                             <label className="block text-gray-800 dark:text-gray-300 text-sm font-medium mb-1" htmlFor="company">公司名称 <span className="text-red-600">*</span></label>
@@ -94,7 +80,7 @@ export default function Contact() {
                                 className="form-input w-full" 
                                 placeholder="Enter your company name" 
                                 required 
-                                {...register('company', { required: true })}
+                                // {...register('company', { required: true })}
                             />
                             </div>
                         </div>
@@ -107,7 +93,7 @@ export default function Contact() {
                                 className="form-input w-full" 
                                 placeholder="Enter your position" 
                                 required 
-                                {...register('position', { required: true })}
+                                // {...register('position', { required: true })}
                             />
                             </div>
                             <div className="w-full md:w-1/2 px-3">
@@ -118,7 +104,7 @@ export default function Contact() {
                                 className="form-input w-full" 
                                 placeholder="Enter your department" 
                                 required
-                                {...register('department', { required: true })}    
+                                // {...register('department', { required: true })}    
                             />
                             </div>
                         </div>
@@ -131,7 +117,7 @@ export default function Contact() {
                                 className="form-input w-full" 
                                 placeholder="Enter your email" 
                                 required 
-                                {...register('email', { required: true })}    
+                                // {...register('email', { required: true })}    
                             />
                             </div>
                         </div>
@@ -144,7 +130,7 @@ export default function Contact() {
                                 className="form-input w-full" 
                                 placeholder="Enter your name" 
                                 required 
-                                {...register('name', { required: true })}    
+                                // {...register('name', { required: true })}    
                             />
                             </div>
                             <div className="w-full md:w-1/2 px-3">
@@ -155,25 +141,11 @@ export default function Contact() {
                                 className="form-input w-full" 
                                 placeholder="Enter your phone number" 
                                 required 
-                                {...register('phone', { required: true })}
+                                // {...register('phone', { required: true })}
                             />
                             </div>
                         </div>
-                        <div className="flex flex-wrap -mx-3 mb-5">
-                            <div className="w-full px-3">
-                            <label className="block text-gray-800 dark:text-gray-300 text-sm font-medium mb-1" htmlFor="country">国家 <span className="text-red-600">*</span></label>
-                            <select 
-                                id="country" 
-                                className="form-select w-full" 
-                                required
-                                {...register('country', { required: true })}
-                            >
-                                <option>中国</option>
-                                <option>美国</option>
-                                <option>英国</option>
-                            </select>
-                            </div>
-                        </div>
+                        
                         <div className="flex flex-wrap -mx-3 mb-5">
                             <div className="w-full px-3">
                             <div className="flex justify-between items-center mb-1">
@@ -185,7 +157,7 @@ export default function Contact() {
                                 className="form-textarea w-full" 
                                 placeholder="What do you want to build with Appy?"
                                 required 
-                                {...register('message', { required: true })}    
+                                // {...register('message', { required: true })}    
                             ></textarea>
                             </div>
                         </div>
@@ -201,11 +173,13 @@ export default function Contact() {
                             </div>
                         </div>
                     </form>
+                
 
-                    </div>
-                </div>
-            </section>
             </div>
-        </>
-    )
+          </div>
+
+        </div>
+      </div>
+    </>
+  )
 }

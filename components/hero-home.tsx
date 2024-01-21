@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 
+import Industry from '@/public/images/industry-8303482_1920.jpg'
+
 export default function HeroHome() {
 
   const [hover, setHover] = useState(false);
@@ -18,7 +20,7 @@ export default function HeroHome() {
 
 
 
-    <section className="relative bg-[url(/images/working.jpg)] bg-cover bg-center bg-no-repeat h-[700px] md:h-[700px]">
+    <section className="relative bg-[url(/images/industry-8303482_1920.jpg)] bg-cover bg-center bg-no-repeat h-[700px] md:h-[700px]">
 
       <div
         className="absolute inset-0 bg-gradient-to-r from-white to-transparent"

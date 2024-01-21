@@ -28,27 +28,33 @@ export default function Target() {
                  
                 {/* GIF 1 */}
                 <div>
-                  <img src="/images/target1.gif" alt="Description of GIF 1" />
+                  <img src="/images/gifs/target-1.gif" alt="Description of GIF 1" />
+                  <p>PMC A1</p>
                 </div>
                 {/* GIF 2 */}
                 <div>
-                  <img src="/images/target2.gif" alt="Description of GIF 2" />
+                  <img src="/images/gifs/target-2.gif" alt="Description of GIF 2" />
+                  <p>PMC A2</p>
                 </div>
                 {/* GIF 3 */}
                 <div>
-                  <img src="/images/target3.gif" alt="Description of GIF 3" />
+                  <img src="/images/gifs/target-3.gif" alt="Description of GIF 3" />
+                  <p>PMC Q7</p>
                 </div>
                 {/* GIF 4 */}
                 <div>
-                  <img src="/images/target4.gif" alt="Description of GIF 4" />
+                  <img src="/images/gifs/target-4.gif" alt="Description of GIF 4" />
+                  <p>PMC Q4</p>
                 </div>
                 {/* GIF 5 */}
                 <div>
-                  <img src="/images/target5.gif" alt="Description of GIF 4" />
+                  <img src="/images/gifs/target-5.gif" alt="Description of GIF 4" />
+                  <p>PMC Q5</p>
                 </div>
                 {/* GIF 6 */}
-                <div>
-                  <img src="/images/target6.gif" alt="Description of GIF 4" />
+                <div className='flex flex-col justify item-center'>
+                  <img src="/images/gifs/target-6.gif" alt="Description of GIF 4" />
+                  <p>AKE LD3</p>
                 </div>
               </div>
             </div>

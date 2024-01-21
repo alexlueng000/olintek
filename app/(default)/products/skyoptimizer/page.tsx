@@ -43,7 +43,7 @@ export default function SkyOptimizer() {
   return (
     <>
       {/* <Hero /> */}
-      <section className="relative bg-[url(/images/campanale.jpg)] bg-cover bg-center bg-no-repeat mt-5 h-[700px] md:h-[700px]">
+      <section className="relative bg-[url(/images/backgrounds-8436664_1280.jpg)] bg-cover bg-center bg-no-repeat mt-5 h-[700px] md:h-[700px]">
 
         <div
         className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"

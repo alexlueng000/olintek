@@ -7,6 +7,11 @@ import Feature01 from '@/public/images/Feature01.jpg'
 import Feature03 from '@/public/images/Feature03.jpg'
 import Feature04 from '@/public/images/Feature04.jpg'
 
+import Network from '@/public/images/networking-1586679_1280.jpg'
+import Teamwork from '@/public/images/teamwork-3309829_1280.jpg'
+import Hand from '@/public/images/hand-3685829_1280.jpg'
+import Business from '@/public/images/businesswoman-571153_1280.jpg'
+
 export default function Different() {
   
   const [tab, setTab] = useState<number>(1)
@@ -30,7 +35,7 @@ export default function Different() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                 <h2 className="text-4xl font-bold font-playfair-display text-black mb-10">是什么让我们与众不同</h2>
-                <p className="text-lg text-black   mt-6">「实践经验的专家」 x 「最强的运算引擎」</p>
+                <p className="text-3xl text-black   mt-6">「实践经验的专家」 x 「最强的运算引擎」</p>
           </div>
           {/* Section content */}
           <div className="md:grid md:grid-cols-12 md:gap-6">
@@ -45,8 +50,8 @@ export default function Different() {
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">我们了解您的挑战</div>
-                    <div className="text-gray-600">在这个快速变化的数字时代，将技术创新有效地应用于航空物流领域是一项极具挑战性的使命。作为航空物流行业的专家，我们秉持着结合航空物流和信息技术的最佳实践，致力于协助客户在其运营过程中不断实现优化和改进，从而为客户创造商业价值。</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1 text-2xl">我们了解您的挑战</div>
+                    <div className="text-black mt-4">在这个快速变化的数字时代，将技术创新有效地应用于航空物流领域是一项极具挑战性的使命。作为航空物流行业的专家，我们秉持着结合航空物流和信息技术的最佳实践，致力于协助客户在其运营过程中不断实现优化和改进，从而为客户创造商业价值。</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -59,8 +64,8 @@ export default function Different() {
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">用户最佳体验的操作设计</div>
-                    <div className="text-gray-600">我们不会在用户体验上妥协，简洁直观的操作界面与智能化的运算引擎协同运作，快速、稳定以及坚强的计算能力，高质量的计算结果来呈现给使用者，才能最大限度地产生价值，让用户保持对决策的控制。</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1 text-2xl">用户最佳体验的操作设计</div>
+                    <div className="text-black mt-4">我们不会在用户体验上妥协，简洁直观的操作界面与智能化的运算引擎协同运作，快速、稳定以及坚强的计算能力，高质量的计算结果来呈现给使用者，才能最大限度地产生价值，让用户保持对决策的控制。</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -73,8 +78,8 @@ export default function Different() {
                   onClick={(e) => { e.preventDefault(); setTab(3); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">驱动智能决策的优化引擎</div>
-                    <div className="text-gray-600">针对各种机型的约束设定，智能化的运算引擎，会根据游戏规则，并据此做出自动装载规划的回应，全新的创新技术方法，满足航空公司对货物配载更加灵活、高效地应对复杂的飞机配载、货物打板规划需求，同时实现更好的业务表现和收益。</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1 text-2xl">驱动智能决策的优化引擎</div>
+                    <div className="text-black mt-4">针对各种机型的约束设定，智能化的运算引擎，会根据游戏规则，并据此做出自动装载规划的回应，全新的创新技术方法，满足航空公司对货物配载更加灵活、高效地应对复杂的飞机配载、货物打板规划需求，同时实现更好的业务表现和收益。</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -87,8 +92,8 @@ export default function Different() {
                   onClick={(e) => { e.preventDefault(); setTab(4); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">安全、可靠、弹性的服务</div>
-                    <div className="text-gray-600">我们的软件产品，不仅能够在公共云端上部署，同样也可以在私有云端上运行，从而提供了极高的灵活性和可扩展性。您也可以将系统无缝集成到您现有的架构中，确保使用者的体验不受影响。无论您选择的是公共云还是私有云，我们的产品都能够实现最佳的效能，满足多样化的需求。</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1 text-2xl">安全、可靠、弹性的服务</div>
+                    <div className="text-black mt-4">我们的软件产品，不仅能够在公共云端上部署，同样也可以在私有云端上运行，从而提供了极高的灵活性和可扩展性。您也可以将系统无缝集成到您现有的架构中，确保使用者的体验不受影响。无论您选择的是公共云还是私有云，我们的产品都能够实现最佳的效能，满足多样化的需求。</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -117,7 +122,7 @@ export default function Different() {
                     unmount={false}                  
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={Feature04} width={500} height={375} alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={Network} width={500} height={375} alt="Features bg" />
                   
                       
                     </div>
@@ -136,7 +141,7 @@ export default function Different() {
                     unmount={false}                  
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={Feature03} width={500} height={375} alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={Teamwork} width={500} height={375} alt="Features bg" />
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -153,7 +158,7 @@ export default function Different() {
                     unmount={false}                  
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={Feature04} width={500} height={375} alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={Hand} width={500} height={375} alt="Features bg" />
                     </div>
                   </Transition>
                   {/* Item 3 */}
@@ -170,7 +175,7 @@ export default function Different() {
                     unmount={false}                  
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded" src={Feature01} width={500} height={375} alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded" src={Business} width={500} height={375} alt="Features bg" />
                     </div>
                   </Transition>
                 </div>
