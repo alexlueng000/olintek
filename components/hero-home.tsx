@@ -18,7 +18,7 @@ export default function HeroHome() {
 
 
 
-    <section className="relative bg-[url(/images/working.jpg)] bg-cover bg-center bg-no-repeat h-[800px] md:h-[800px]">
+    <section className="relative bg-[url(/images/working.jpg)] bg-cover bg-center bg-no-repeat h-[700px] md:h-[700px]">
 
       <div
         className="absolute inset-0 bg-gradient-to-r from-white to-transparent"
@@ -32,8 +32,8 @@ export default function HeroHome() {
             超越经验的世界
           </h1>
 
-          <p className="mt-12 max-w-lg text-lg text-slate-500  md:text-xl">
-            这是一款基于飞机货舱配载、货物打板的智慧决策软件，可适应您不同的作业方式，优化您的装载效率，帮助您获得更高水平的营收
+          <p className="mt-12 max-w-lg text-lg text-black  md:text-xl">
+          迄今为止最佳的飞机货舱配载、货物打板的智慧决策软件，可适应您不同的作业方式，优化您的飞机装载效率，帮助您获得更高水平的营收。
           </p>
 
             <div className="mt-12 flex flex-wrap gap-4 text-center justify-start">
@@ -45,7 +45,7 @@ export default function HeroHome() {
             </a>
 
             <a
-              href="#"
+              href="/lessons"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
               className="block w-full rounded bg-white px-12 py-3 text-base font-medium text-lime-500 shadow hover:text-white hover:bg-lime-600 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"

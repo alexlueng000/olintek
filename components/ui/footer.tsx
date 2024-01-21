@@ -3,7 +3,7 @@ import Logo from './logo'
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className='bg-gray-200'>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* Top area: Blocks */}
@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="mb-2">
               <Logo />
             </div>
-            <div className="text-md text-slate-800">自2016年以来，我们公司一直在开发高质量、可靠的软件，以满足航空货运企业的需求。我们是专业的算法与优化的软件开发专业公司。</div>
+            <div className="text-md text-slate-800">自2016年以来，我们公司一直在开发高质量、可靠的软件，以满足航空货运企业的需求。我们是专业的算法与优化软件的开发公司。</div>
           </div>
 
           {/* 2nd block */}
@@ -22,7 +22,7 @@ export default function Footer() {
             <h6 className="text-sm text-slate-800 font-semibold mb-2">乐羿科技有限公司</h6>
             <ul className="text-sm font-medium space-y-2">
               <li>
-                <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">104  台北市南京西路1-1号6楼 </a>
+                <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">104 台北市中山区南京西路1-1号6楼 </a>
               </li>
               <li>
                 <a href="#" className="text-slate-500 hover:text-blue-600 transition duration-150 ease-in-out">E-mail：service@olintek.com</a>
@@ -38,12 +38,12 @@ export default function Footer() {
           {/* Social links */}
           <ul className="flex space-x-6 mb-4 md:order-1 md:ml-4 md:mb-0">
             <li>
-              <a className="text-black hover:text-blue-600 transition duration-150 ease-in-out" href="#0">
+              <a className="text-black hover:text-blue-600 transition duration-150 ease-in-out" href="/contact">
                 联系我们
               </a>
             </li>
             <li>
-              <a className="text-black hover:text-blue-600 transition duration-150 ease-in-out" href="#0">
+              <a className="text-black hover:text-blue-600 transition duration-150 ease-in-out" href="/lessons">
                 在线演示
               </a>
             </li>

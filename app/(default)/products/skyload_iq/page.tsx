@@ -8,6 +8,8 @@ import Features1  from './features1'
 import skyloadiqP1 from '@/public/images/skyloadiq-p1.png'
 import skyloadiqP2 from '@/public/images/skyloadiq-p2.png'
 
+import skyload from '@/public/images/skyload.png'
+
 export default function SkyloadIq() {
 
   const [hover, setHover] = useState(false);
@@ -23,7 +25,7 @@ export default function SkyloadIq() {
   return (
     <>
       {/* <Hero /> */}
-      <section className="relative bg-[url(/images/plane.jpg)] bg-cover bg-center bg-no-repeat mt-5 h-[800px] md:h-[800px]">
+      <section className="relative bg-[url(/images/plane.jpg)] bg-cover bg-center bg-no-repeat mt-5 h-[700px] md:h-[700px]">
 
         <div
           className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"
@@ -38,7 +40,7 @@ export default function SkyloadIq() {
             SkyLoad iQ
             </h1>
 
-            <p className="mt-12 max-w-md text-lg text-slate-500  md:text-xl">
+            <p className="mt-12 max-w-md text-lg text-black  md:text-xl">
             您可以将飞机舱室配载和管理提升到全新境界，让智能装载为您所用。
             </p>
 
@@ -70,9 +72,38 @@ export default function SkyloadIq() {
           {/* Section header */}
           <div className="max-w-6xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="text-4xl font-bold font-playfair-display text-black mb-10">为航空货运的收益优化所打造</h2>
-            <p className='max-w-6xl text-lg text-center text-slate-500 sm:text-xl mt-6'>
+            {/* <p className='max-w-6xl text-lg text-left text-black sm:text-xl mt-6'>
               货机或客机的货舱内，使用ULD进行货物装卸时，搭载ULD时需要遵守的一些限制和规定。这些限制和规定是为了确保货物的安全运输，以确保货物在ULD的正确装载和稳定性，同时保证飞行过程中的安全性。
-            </p>
+            </p> */}
+
+            {/* 1st Feature */}
+            <div className="flex flex-col-reverse md:flex-row-reverse md:items-center md:space-x-reverse lg:space-x-reverse xl:space-x-reverse md:space-x-8 lg:space-x-16 xl:space-x-20 space-y-4 space-y-reverse md:space-y-0">
+
+{/* Content */}
+{/* <div className="md:min-w-[30rem]" data-aos="fade-left">
+  <div className='flex justify-start'>
+
+    <p className="text-sm md:text-3xl font-bold font-playfair-display mb-4">
+      超长货物的跨板装载自动计算
+    </p>
+  </div>
+  
+  <div data-aos="fade-up">
+    <div className="mb-8 text-center">
+      <p className="text-xl text-slate-500 text-left">智能化决策的AI技术，展现可视化和自动化的装载优化，在现代航空物流中具有关键性的地位，可大幅提升装载过程的效率和准确性。我们在信息技术和人工智能领域的最新研究成果，将「组合优化」方法实际应用于现实环境。这不仅是基于过去成功案例积累的宝贵经验，同时也是在持续创新的推动下，不断追求更高水平的效能和成果</p>
+    </div>
+  </div>
+</div> */}
+
+{/* Image */}
+<div className="flex justify-center items-center" data-aos="fade-right">
+  <div className="relative">
+    <div className="absolute inset-0 pointer-events-none border-2 border-slate-200 -translate-x-4 -translate-y-4 -z-10" aria-hidden="true"></div>
+    <Image className="mx-auto md:max-w-none" src={skyload} width={540} height={405} alt="Customer 01" />
+  </div>
+</div>
+
+</div>
           </div>
 
           <div className="py-12 md:py-20">
@@ -83,21 +114,19 @@ export default function SkyloadIq() {
             {/* Skyload Features */}
             <div className="max-w-xl mx-auto md:max-w-none space-y-20">
 
-              {/* 1st Feature */}
-              <div className="flex flex-col-reverse md:flex-row-reverse md:items-center md:space-x-reverse lg:space-x-reverse xl:space-x-reverse md:space-x-8 lg:space-x-16 xl:space-x-20 space-y-4 space-y-reverse md:space-y-0">
+              
+
+              {/* 3rd Feature */}
+              <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-8 lg:space-x-16 xl:space-x-20 space-y-4 space-y-reverse md:space-y-0">
 
                 {/* Content */}
                 <div className="md:min-w-[30rem]" data-aos="fade-left">
-                  <div className='flex justify-start'>
-
-                    <p className="text-sm md:text-3xl font-bold font-playfair-display mb-4">
-                      超长货物的跨板装载自动计算
-                    </p>
-                  </div>
-                  
+                  <h2 className="h3 md:text-3xl font-playfair-display mb-4">
+                  组合优化的智能运算引擎，帮助你最大程度地利用舱位
+                  </h2>
                   <div data-aos="fade-up">
                     <div className="mb-8 text-center">
-                      <p className="text-xl text-slate-500 text-left">智能化决策的AI技术，展现可视化和自动化的装载优化，在现代航空物流中具有关键性的地位，可大幅提升装载过程的效率和准确性。我们在信息技术和人工智能领域的最新研究成果，将「组合优化」方法实际应用于现实环境。这不仅是基于过去成功案例积累的宝贵经验，同时也是在持续创新的推动下，不断追求更高水平的效能和成果</p>
+                      <p className="text-xl text-slate-500 text-left">我们独家的PPS技术(Position Pattern Service)，应用组合优化技术，依据机型的装载布局设计，以及使用的ULD版本，进行全自动的ULD搭载组合分析。考虑舱位的搭载重量，以及舱位搭载的平衡、危险品的搭载位置与隔离条件…等，智能选择适用的ULD类型和数量，自动配置最佳搭载舱位，以最大程度地利用舱位空间。</p>
                     </div>
                   </div>
                 </div>
@@ -105,24 +134,73 @@ export default function SkyloadIq() {
                 {/* Image */}
                 <div className="flex justify-center items-center" data-aos="fade-right">
                   <div className="relative">
-                    <div className="absolute inset-0 pointer-events-none border-2 border-slate-200 -translate-x-4 -translate-y-4 -z-10" aria-hidden="true"></div>
-                    <Image className="mx-auto md:max-w-none" src={skyloadiqP1} width={540} height={405} alt="Customer 01" />
+                    <div className="absolute inset-0 pointer-events-none border-2 border-slate-200 translate-x-4 -translate-y-4 -z-10" aria-hidden="true"></div>
+                    <Image className="mx-auto md:max-w-none" src={skyloadiqP2} width={540} height={405} alt="Customer 02" />
                   </div>
                 </div>
 
               </div>
 
-              {/* 2nd Feature */}
               <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-8 lg:space-x-16 xl:space-x-20 space-y-4 space-y-reverse md:space-y-0">
 
                 {/* Content */}
                 <div className="md:min-w-[30rem]" data-aos="fade-left">
                   <h2 className="h3 md:text-3xl font-playfair-display mb-4">
-                    货物探板装载的自动计算
+                  超长货物的跨板装载自动计算
                   </h2>
                   <div data-aos="fade-up">
                     <div className="mb-8 text-center">
-                      <p className="text-xl text-slate-500 text-left">对于飞机的下货舱，为了有效利用舱室的空间，符合长尺寸货物的特殊装载作业要求，系统会根据货物的尺寸、重量、平衡性等因素，自动计算探板时货物所需的撑高尺寸，以确保装载过程的合理性和稳定性，并有效利用各舱位的空间。</p>
+                      <p className="text-xl text-slate-500 text-left">超长尺寸的货物，一般无法使用一个集装板来装载，在现场作业上最常使用并板(凹凸板)的方法来做超长尺寸的货物装载。一般跨板装载作业时，须考虑集装板所能承载的重量之外，更须考虑每个舱位所能搭载的重量限制。支持超长尺寸货物的跨板装载时，自动计算所需要的集装板类型与数量，以及跨板时货物必须撑高的尺寸。</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Image */}
+                <div className="flex justify-center items-center" data-aos="fade-right">
+                  <div className="relative">
+                    <div className="absolute inset-0 pointer-events-none border-2 border-slate-200 translate-x-4 -translate-y-4 -z-10" aria-hidden="true"></div>
+                    <Image className="mx-auto md:max-w-none" src={skyloadiqP2} width={540} height={405} alt="Customer 02" />
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-8 lg:space-x-16 xl:space-x-20 space-y-4 space-y-reverse md:space-y-0">
+
+                {/* Content */}
+                <div className="md:min-w-[30rem]" data-aos="fade-left">
+                  <h2 className="h3 md:text-3xl font-playfair-display mb-4">
+                  货物垫板与货物捆绑
+                  </h2>
+                  <div data-aos="fade-up">
+                    <div className="mb-8 text-center">
+                      <p className="text-xl text-slate-500 text-left">当飞机在起飞、爬升、降落以及在飞行中遇到乱流时，装在飞机上的货物受到惯性影响，将产生向前、向后、向上、向左、向右5个方向的冲击。因此、当飞机上装有较重的货物时，必须对货物采取限动措施以及飞机货舱地板承受力的判断，自动计算展延面积及垫板与捆绑辅材的类型与数量。</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Image */}
+                <div className="flex justify-center items-center" data-aos="fade-right">
+                  <div className="relative">
+                    <div className="absolute inset-0 pointer-events-none border-2 border-slate-200 translate-x-4 -translate-y-4 -z-10" aria-hidden="true"></div>
+                    <Image className="mx-auto md:max-w-none" src={skyloadiqP2} width={540} height={405} alt="Customer 02" />
+                  </div>
+                </div>
+
+              </div>
+
+
+              <div className="flex flex-col-reverse md:flex-row md:items-center md:space-x-8 lg:space-x-16 xl:space-x-20 space-y-4 space-y-reverse md:space-y-0">
+
+                {/* Content */}
+                <div className="md:min-w-[30rem]" data-aos="fade-left">
+                  <h2 className="h3 md:text-3xl font-playfair-display mb-4">
+                  Loading Instruction Report（LIR）
+                  </h2>
+                  <div data-aos="fade-up">
+                    <div className="mb-8 text-center">
+                      
                     </div>
                   </div>
                 </div>

@@ -9,7 +9,7 @@ export default function ΩClients1() {
             {/* Section header */}
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
               <h1 className="text-4xl font-bold font-playfair-display text-black  mb-10">他们信任我们</h1>
-              <p className="text-lg text-center text-slate-500 mt-6">我们通过与客户携手合作，共同应对变化和挑战，建立牢固的信任和认可。我们凭借丰富的知识和专业技能，在航空物流领域展现卓越影响力并作出重要贡献。</p>
+              <p className="text-lg text-left text-black mt-6">我们通过与客户携手合作，共同应对变化和挑战，建立牢固的信任和认可。我们凭借丰富的知识和专业技能，在航空物流领域展现卓越影响力并作出重要贡献。</p>
             </div>
   
             {/* Items */}

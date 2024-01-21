@@ -35,7 +35,7 @@ export default function Stats() {
       text: 'Number of ULD',
     },
     {
-      number: 12,
+      number: 5,
       suffix: 'K',
       text: 'Calculate time  ( m )',
     },

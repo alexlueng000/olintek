@@ -35,6 +35,12 @@ export default function Header({ mode = 'dark' }: {
                     <Link href="/products/skyoptimizer" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">SkyOptimizer</Link>
                   </li>
                 </Dropdown>
+
+                <li>
+                  <Link href="/faq" className="font-medium text-black-600 dark:text-slate-300 dark:hover:text-white px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out group">
+                    常见问题集 
+                  </Link>
+                </li>
               
               <Dropdown title="我们的公司">
                 <li>
@@ -43,38 +49,40 @@ export default function Header({ mode = 'dark' }: {
                 <li>
                   <Link href="/recruit" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">人才招募</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/partners" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">合作伙伴</Link>
                 </li>
                 <li>
                   <Link href="/contact" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">联系我们</Link>
-                </li>
+                </li> */}
               </Dropdown>
-              <Dropdown title="我们的支持">
+              {/* <Dropdown title="我们的支持">
                 <li>
                   <Link href="/lessons" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-2 py-2 flex items-center transition duration-150 ease-in-out">单点课程学习</Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <Link href="/faq" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">常见问题集</Link>
-                </li>
-              </Dropdown>
+                </li> */}
+              {/* </Dropdown> */}
               {/* 1st level: hover */}
             </ul>
 
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
-              <Dropdown title="CN">
+              <Dropdown title="English">
                 {/* 2nd level: hover */}
                 <li>
-                  <Link href="/404" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">EN</Link>
+                  <Link href="/cn-simple" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">中文简体</Link>
                 </li>
                 <li>
-                  <Link href="/support" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">JP</Link>
+                  <Link href="/cn-tw" className="font-medium text-slate-800 hover:text-blue-600 dark:text-slate-400 dark:hover:text-blue-600 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">中文繁體</Link>
                 </li>
               </Dropdown>
+
+              
               <li>
                 <Link href="/request-demo" className="font-medium text-black-600 dark:text-slate-300 dark:hover:text-white px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out group">
-                  试用申请 <span className="tracking-normal text-black-600 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
+                  免费试用 <span className="tracking-normal text-black-600 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
                 </Link>
               </li>
             </ul>

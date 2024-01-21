@@ -25,7 +25,7 @@ export default function SkycubeIq() {
   return (
     <>
       {/* <Hero /> */}
-      <section className="relative bg-[url(/images/chuttersnap.jpg)] bg-cover bg-center bg-no-repeat mt-5 h-[800px] md:h-[800px]">
+      <section className="relative bg-[url(/images/chuttersnap.jpg)] bg-cover bg-center bg-no-repeat mt-5 h-[700px] md:h-[700px]">
 
 
         <div
@@ -40,7 +40,7 @@ export default function SkycubeIq() {
             SkyCube iQ
             </h1>
 
-            <p className="mt-12 max-w-md text-lg text-slate-500  md:text-xl">
+            <p className="mt-12 max-w-md text-lg text-black  md:text-xl">
             把智能订舱决策交给我们，您可以获得最佳收益的装载方案。
             </p>
 
@@ -74,8 +74,8 @@ export default function SkycubeIq() {
 
               {/* Section header */}
               <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                <h2 className="text-4xl font-bold font-playfair-display text-black mb-10">订舱和包机报价，更加智能化</h2>
-                <p className='max-w-6xl text-lg text-slate-500 sm:text-xl mt-6'>货物装载堆叠的限制条件是指在ULD内，将货物进行堆叠时需要遵守的一些限制和规定。为了确保飞行的安全，装载的货物应该进行正确的堆叠和固定，确保货物的稳定性，防止在飞行中发生移动或滑动，干扰飞机的平衡。</p>
+                <h2 className="text-4xl font-bold font-playfair-display text-black mb-10">包机报价神器，聪明订舱如虎添翼</h2>
+                {/* <p className='max-w-6xl text-lg text-black text-left sm:text-xl mt-6'>货物装载堆叠的限制条件是指在ULD内，将货物进行堆叠时需要遵守的一些限制和规定。为了确保飞行的安全，装载的货物应该进行正确的堆叠和固定，确保货物的稳定性，防止在飞行中发生移动或滑动，干扰飞机的平衡。</p> */}
               </div>
 
               {/* Line */}
@@ -90,11 +90,11 @@ export default function SkycubeIq() {
                   {/* Content */}
                   <div className="md:min-w-[30rem]" data-aos="fade-left">
                     <h2 className="h3 md:text-3xl font-playfair-display mb-4">
-                      ULD轮廓设计精灵
+                    Auto Interlocking
                     </h2>
                     <div data-aos="fade-up">
                       <div className="mb-8 text-center">
-                        <p className="text-xl text-slate-500 text-left">支持各种机型在各舱室、各舱区、各舱位的ULD轮廓外形自动设计是一个复杂且具有挑战性的技术。ULD轮廓设计精灵可以依据机型的装载限制，自动建立适用于各舱区、舱位的ULD的轮廓外形。</p>
+                        <p className="text-xl text-black text-left">智能化的运算引擎，自动判断每个货物的尺寸和形状，选择最合适的堆叠模式 (Block、Brick、Pinwheel)，实现最优的堆叠方案。提高堆叠的稳定性和紧密程度，减少货物间的空隙，最大限度地利用集装板的空间。</p>
                       </div>
                     </div>
                   </div>
@@ -116,12 +116,12 @@ export default function SkycubeIq() {
                   {/* Content */}
                   <div className="md:min-w-[30rem]" data-aos="fade-left">
                     <h2 className="h3 md:text-3xl font-playfair-display mb-4">
-                      Interlocking
+                    Auto Overhang Loading
                     </h2>
                     <div data-aos="fade-up">
                       <div className="mb-8 text-center">
-                        <p className="text-xl text-slate-500 text-left">使用 Interlocking 的堆叠方法是在集装板堆叠时的一种常用策略。这种方法可以使货物的装载重心分布更均匀，提高堆叠的稳定性和紧密程度，减少货物间的空隙，最大限度地利用集装板的空间。</p>
-                        <p className="mt-4 text-xl text-slate-500 text-left">智能化的运算引擎，可以判断每个货物的尺寸和形状，根据集装板的大小和装载需求，自动选择最合适的堆叠模式 (Block、Brick、Pinwheel)，实现最优的堆叠方案。同时，还需考虑货物的重心平衡、稳定性和安全性，确保堆叠过程中不会出现货物倾倒或受损的情况。</p>
+                        <p className="text-xl text-black text-left">对于飞机的下货舱，为了有效利用舱室的空间，符合长尺寸货物的特殊装载作业要求，智能化的运算引擎会根据货物的尺寸、重量、平衡性等因素，自动计算探板时货物必须垫高的高尺寸，以确保装载过程的合理性和稳定性，并有效利用各舱位的空间。</p>
+                        
                       </div>
                     </div>
                   </div>

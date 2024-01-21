@@ -24,13 +24,10 @@ export default function LessonsContent() {
           <div className="pb-12 md:pb-20">
 
           <div className="max-w-3xl mx-auto">
-            <div className="text-lg text-slate-500 mt-20">
-              <h2 className="h3 font-playfair-display text-slate-800 mb-12 mt-12 text-center">单点课程视频</h2>
+            <div className="text-lg text-black mt-20">
+              <h2 className="h3 font-playfair-display text-black mb-12 mt-12 text-center">课程视频</h2>
               <p className="">
-              OLINTEK 拥有顶尖的数学建模与优化技术的软件研发公司，
-              我们提供十分快速简单的在线单点课程的培训，从最基本
-              的观念到技巧的研究应用，完整而迅速地传递给你，让你
-              从新手立刻变成高手，轻松使用我们的产品。
+              OLINTEK拥有顶尖的数学建模与优化技术的软件研发公司，我们提供十分快速简单的在线单点课程的培训，从最基本的观念到技巧的研究应用，完整而迅速地传递给你，让你从新手立刻变成高手，轻松使用我们的产品。
               </p>
 
             </div>
@@ -41,31 +38,31 @@ export default function LessonsContent() {
 
         <div className="pb-12 md:pb-20 flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8">
           <div className='w-full flex-col items-center bg-white  shadow-lg rounded-sm border border-slate-200 p-5 min-w-[20rem]'>
-            <h1 className='text-2xl text-slate-800 dark:text-slate-100 font-semibold mb-4'>基本入门</h1>
+            <h1 className='text-2xl text-slate-800 dark:text-slate-100 font-semibold mb-4'>基本入门课程</h1>
             <ul className='w-full text-left'>
               <li className='text-xl text-slate-600 dark:text-slate-300 font-medium mb-2'>
-                <a href="#" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>1. 运输代码导入</a>
+                <a href="#" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>1. 运输代码数据导入</a>
               </li>
               <li className='text-xl text-slate-600 dark:text-slate-300 font-medium mb-2'>
-                <a href="#" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>2. 特货代码导入</a></li>
+                <a href="#" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>2. 特货代码数据导入</a></li>
               <li className='text-xl text-slate-600 dark:text-slate-300 font-medium mb-2'>
-                <a href="#" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>3. 特货抵触隔离表</a></li>
+                <a href="#" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>3. 创建特货抵触隔离表</a></li>
               <li className='text-xl text-slate-600 dark:text-slate-300 font-medium mb-2'>
-                <a href="#" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>4. 航线航班导入</a></li>
+                <a href="#" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>4. 航线航班数据导入</a></li>
               <li className='text-xl text-slate-600 dark:text-slate-300 font-medium mb-2'>
                 <a href="#" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>5. 基本数据导入</a></li>
               <li className='text-xl text-slate-600 dark:text-slate-300 font-medium mb-2'>
-                <a href="#" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>6. 货舱门收货尺寸表</a></li>
+                <a href="#" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>6. 创建货舱门收货尺寸表</a></li>
             </ul>
             
           </div>
 
 
           <div className='w-full flex-col items-center bg-white  shadow-lg rounded-sm border border-slate-200 p-5 min-w-[20rem]'>
-            <h1 className='text-2xl text-slate-800 dark:text-slate-100 font-semibold mb-4'>高级应用</h1>
+            <h1 className='text-2xl text-slate-800 dark:text-slate-100 font-semibold mb-4'>高级应用课程</h1>
             <ul className='w-full text-left'>
               <li className='text-xl text-slate-600 dark:text-slate-300 font-medium mb-2'>
-                <a href="#" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>1. ULD的轮廓设计</a>
+                <a href="#" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>1.  ULD的轮廓设计</a>
               </li>
               <li className='text-xl text-slate-600 dark:text-slate-300 font-medium mb-2'><a href="#" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>2. 装载布局设计</a></li>
               <li className='text-xl text-slate-600 dark:text-slate-300 font-medium mb-2'><a href="#" className="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>3. 装载布局检视</a></li>

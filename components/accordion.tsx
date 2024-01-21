@@ -20,12 +20,12 @@ export default function AccordionBasic({ children, title, isOpen, onClick }: Acc
         aria-expanded={isOpen}
         onClick={onClick}
       >
-        <div className="text-2xl text-black dark:text-slate-100 font-bold">{title}</div>
+        <div className="text-xl text-black dark:text-slate-100 font-bold">{title}</div>
         <svg className={`w-8 h-8 shrink-0 fill-current text-slate-400 dark:text-slate-500 group-hover:text-slate-500 dark:group-hover:text-slate-400 ml-3 ${open && 'rotate-180'}`} viewBox="0 0 32 32">
           <path d="M16 20l-5.4-5.4 1.4-1.4 4 4 4-4 1.4 1.4z" />
         </svg>
       </button>
-      <div className={`text-lg text-slate-500 ${!isOpen && 'hidden'}`}>
+      <div className={`text-lg text-black ${!isOpen && 'hidden'}`}>
         {children}
       </div>
     </div>

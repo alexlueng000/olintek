@@ -57,7 +57,7 @@ export default function Contact() {
                             <div className="max-w-full mx-auto text-center pb-12 md:pb-16 pt-60">
                                 <p className="text-4xl font-extrabold text-black text-left pt-8">联系我们</p>
                                 <div className='mt-4 w-full'>
-                                        <p className="text-xl text-left text-black font-extrabold dark:text-gray-400">OLINTEK 非常感谢您对本公司的支持与爱护，如果您是对我们的产品有任何疑问、意见或建议，或是相关问题需要替您解答，欢迎您将问题写在的 「 在线咨询表单 」，我们将有专人针对您的问题亲自与您洽谈，谢谢！</p>
+                                        <p className="text-xl text-left text-black font-extrabold dark:text-gray-400">OLINTEK 非常感谢您对本公司的支持与爱护，如果您是对我们的产品有任何疑问、意见或建议，或是相关问题需要替您解答，我们将有专人针对您的问题亲自与您洽谈，谢谢！</p>
                                     
                                 </div>
                             </div>
