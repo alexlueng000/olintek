@@ -10,6 +10,18 @@ import PageBg from '@/public/images/request-demo-bg.jpg'
 import CustomerAvatar from '@/public/images/customer-avatar-04.jpg'
 import Logo from '@/components/ui/logo'
 
+export type ContactFormData = {
+  company: string
+  position: string
+  department: string
+  email: string
+  name: string
+  phone: string
+  country: string
+  message: string
+  billCode?: string
+}
+
 export default function RequestDemo() {
 
   const [selectedButton, setSelectedButton] = useState<string | null>('skyload');
