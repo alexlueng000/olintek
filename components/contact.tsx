@@ -22,6 +22,11 @@ export type ContactFormData = {
   billCode?: string
 }
 
+export type SendContactEmailResponse = {
+  success: boolean
+  message: string
+}
+
 export default function RequestDemo() {
 
   const [selectedButton, setSelectedButton] = useState<string | null>('skyload');
